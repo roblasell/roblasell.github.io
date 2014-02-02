@@ -1,0 +1,62 @@
+body {
+	background: #f0f0f0;
+	color: black;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+div.formatter {
+	width: 800px;
+}
+
+h1 {
+	/*margin-left: 20px;*/
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+	text-align: left;
+	margin-left: 20px;
+	font-weight: bold;
+	/*border-bottom: 1px solid black;*/
+}
+
+div.title {
+	font-size: 16px;
+	text-align: left;
+	margin-left: 40px;
+	border-right: 1px solid #a0a0a0;
+	width: 100px;
+	height: 100px;
+}
+
+div.location {
+	font-weight: bold;
+}
+
+div.date {
+	font-style: italic;
+}
+
+div.info {
+	width: 500px;
+	text-align: left;
+	background: red;
+}
+
+ul.education {
+	list-style-type: none;
+}
+
+ul.education li {
+	font-size: 16px;
+}
+
+p.desc {
+
+}
+
+
+
+
