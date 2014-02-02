@@ -16,21 +16,35 @@ p.name {
 }
 
 p.onelinebio {
-	font-size: 20px;
+	font-style: italic;
+	font-size: 24px;
 	color: #909090;
 	margin-top: 10px;
 	margin-bottom: 50px;
 }
 
+p.title {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+p.flavor {
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-style: italic;
+	color: #909090;
+}
 
 h2 {
 	font-size: 36px;
 }
 
 div.links {
-	margin-top: 20px;
+	margin-top: 0px;
 	margin-left: 100px;
-	width: 250px;
+	width: 210px;
 }
 
 ul.info {
@@ -42,10 +56,10 @@ ul.info a {
 	color: #303030;
 	font-size: 20px;
 	text-decoration: none;
-	-moz-border-radius: 10px;
+	/*-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -khtml-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
     padding: 1px;
     display: block;
 }
@@ -57,6 +71,7 @@ ul.info a:hover {
 ul.info li:hover {
 	color: #f0f0f0;
 	background: #303030;
+
 }
 
 div.content div {
@@ -67,10 +82,6 @@ div.content {
 	margin-right: auto;
 	margin-left: 250px;
 	width: 700;
-
-}
-
-p {
 
 }
 
