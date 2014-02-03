@@ -1,0 +1,28 @@
+body {
+	background: #f0f0f0;
+	width: 1000px;
+	float: left;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+div.bio {
+	float: left;
+	margin-top: 90px;
+	text-align: center;
+	width: 350px;
+	color: black;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 18px;
+}
+
+div.brace {
+	float: left;
+	color: #909090;
+	font-size: 400px;
+}
