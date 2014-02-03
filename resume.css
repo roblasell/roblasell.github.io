@@ -5,34 +5,34 @@ body {
 }
 
 div.formatter {
-	width: 800px;
+	width: 700px;
 }
 
 h1 {
-	/*margin-left: 20px;*/
+	margin-left: 10px;
 	font-size: 40px;
-	text-align: center;
 }
 
 h2 {
 	font-size: 24px;
-	text-align: left;
 	margin-left: 20px;
-	font-weight: bold;
 	/*border-bottom: 1px solid black;*/
 }
 
-div.title {
+div.education {
+	float: left;
 	font-size: 16px;
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
 	width: 100px;
-	height: 100px;
+	height: 180px;
+	margin-right: 0px;
 }
 
-div.location {
-	font-weight: bold;
+div.section div {
+	/*float: left;*/
+	margin-bottom: 5px;
 }
 
 div.date {
@@ -40,23 +40,85 @@ div.date {
 }
 
 div.info {
+	margin-left: 10px;
 	width: 500px;
-	text-align: left;
-	background: red;
+	float: left;
 }
 
-ul.education {
+ul.list {
 	list-style-type: none;
+	padding: 5px;
+	/*float: left;*/
+	margin-left: 5px;
+	margin-bottom: 20px;
+	margin-top: -20px;
 }
 
-ul.education li {
+ul.list li {
+	float: left;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+div.desc {
+	margin-bottom: 10px;
+	width: 300px;
+}
+
+div.datum {
+	margin-right: 20px;
+}
+
+div.languages {
+	font-size: 16px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.skills {
+	font-size: 16px;
+	float: left;
+	text-align: left;
+	margin-left: 40px;
+	border-right: 1px solid #a0a0a0;
+	width: 100px;
+	height: 20px;
+	margin-right: 0px;
+}
+
+div.mw {
+	float: left;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 40px;
+	border-right: 1px solid #a0a0a0;
+	width: 100px;
+	height: 100px;
+	margin-right: 0px;
+}
+
+div.dph {
+	float: left;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 40px;
+	border-right: 1px solid #a0a0a0;
+	width: 100px;
+	height: 85px;
+	margin-right: 0px;
+}
+
+div.tuds {
+	float: left;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 40px;
+	border-right: 1px solid #a0a0a0;
+	width: 100px;
+	height: 120px;
+	margin-right: 0px;
+}
+
+ul.job {
 	font-size: 16px;
 }
-
-p.desc {
-
-}
-
-
-
-
