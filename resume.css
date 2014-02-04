@@ -25,7 +25,7 @@ div.education {
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
-	width: 100px;
+	width: 120px;
 	height: 180px;
 	margin-right: 0px;
 }
@@ -48,7 +48,6 @@ div.info {
 ul.list {
 	list-style-type: none;
 	padding: 5px;
-	/*float: left;*/
 	margin-left: 5px;
 	margin-bottom: 20px;
 	margin-top: -20px;
@@ -81,7 +80,7 @@ div.skills {
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
-	width: 100px;
+	width: 120px;
 	height: 20px;
 	margin-right: 0px;
 }
@@ -92,33 +91,36 @@ div.mw {
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
-	width: 100px;
+	width: 120px;
 	height: 100px;
 	margin-right: 0px;
 }
 
 div.dph {
-	float: left;
+	margin-top: 130px;
 	font-size: 16px;
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
-	width: 100px;
-	height: 85px;
+	width: 120px;
+	height: 100px;
 	margin-right: 0px;
 }
 
 div.tuds {
-	float: left;
+	margin-top: 90px;
 	font-size: 16px;
 	text-align: left;
 	margin-left: 40px;
 	border-right: 1px solid #a0a0a0;
-	width: 100px;
+	width: 120px;
 	height: 120px;
 	margin-right: 0px;
 }
 
 ul.job {
+	height: 75px;
+	margin-left: -10px;
+	float: left;
 	font-size: 16px;
 }
