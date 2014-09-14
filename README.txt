@@ -17,9 +17,6 @@ associated files:
 ===============================================================
 
 
-hours spent working on this project to date: 13
-
-
 things implemented as I would like them to be:
 
 	- this README
