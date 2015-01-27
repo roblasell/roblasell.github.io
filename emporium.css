@@ -1,0 +1,100 @@
+body {
+	background: LightBlue;
+}
+
+.emporium {
+	margin-top: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+h1 {
+	font-size: 50px;
+	color: SlateBlue;
+	text-align: center;
+	margin-top: 40px;
+}
+
+h2 {
+	color: SeaGreen;
+	text-align: center;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.emphasis {
+	color: Salmon;
+	font-style: italic;
+}
+
+#pitch {
+	color: SteelBlue;
+	background: LightGray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+}
+
+.catalog {
+	font-size: 20px;
+	color: SteelBlue;
+	background: LightGray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: Salmon;
+}
+
+.desc {
+	padding-right: 20px;
+	width: 150px;
+}
+
+.desc:hover {
+	background: SlateGray;
+	color: Salmon;
+	font-size: 24px;
+	text-align: center;
+}
+
+img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+#disclaimer {
+	color: SteelBlue;
+	background: LightGray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-left: 30%;
+	margin-right: 30%;
+	font-size: 14px;
+}
+
+a#linkback {
+	margin-left: 40%;
+}
