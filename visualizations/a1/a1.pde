@@ -28,9 +28,9 @@ int highlightColor = color(255, 254, 179);
 void setup() {
   size(700, 800);
   
-  if (frame != null) {
-    frame.setResizable(true);
-  }
+  //if (frame != null) {
+  //  frame.setResizable(true);
+  //}
   
   setupTree();
 }
