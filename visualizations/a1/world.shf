@@ -1,0 +1,525 @@
+261
+Aruba: 103441
+Andorra: 72786
+Afghanistan: 31627506
+Angola: 24227524
+Albania: 2894475
+United Arab Emirates: 9086139
+Argentina: 42980026
+Armenia: 3006154
+American Samoa: 55434
+Antigua and Barbuda: 90900
+Australia: 23490736
+Austria: 8534492
+Azerbaijan: 9537823
+Burundi: 10816860
+Belgium: 11225207
+Benin: 10598482
+Burkina Faso: 17589198
+Bangladesh: 159077513
+Bulgaria: 7226291
+Bahrain: 1361930
+Bahamas, The: 383054
+Bosnia and Herzegovina: 3817554
+Belarus: 9470000
+Belize: 351706
+Bermuda: 65181
+Bolivia: 10561887
+Brazil: 206077898
+Barbados: 283380
+Brunei Darussalam: 417394
+Bhutan: 765008
+Botswana: 2219937
+Central African Republic: 4804316
+Canada: 35540419
+Switzerland: 8190229
+Channel Islands: 162917
+Chile: 17762647
+China: 1364270000
+Cote d'Ivoire: 22157107
+Cameroon: 22773014
+Congo, Rep: 4504962
+Colombia: 47791393
+Comoros: 769991
+Cabo Verde: 513906
+Costa Rica: 4757606
+Cuba: 11379111
+Curacao: 155872
+Cayman Islands: 59172
+Cyprus: 1153658
+Czech Republic: 10510566
+Germany: 80889505
+Djibouti: 876174
+Dominica: 72341
+Denmark: 5639565
+Dominican Republic: 10405943
+Algeria: 38934334
+Ecuador: 15902916
+Egypt, Arab Rep: 89579670
+Eritrea: 5110444
+Spain: 46404602
+Estonia: 1313645
+Ethiopia: 96958732
+Finland: 5463596
+Fiji: 886450
+France: 66206930
+Faeroe Islands: 48221
+Micronesia, Fed Sts: 104044
+Gabon: 1687673
+United Kingdom: 64510376
+Georgia: 4504100
+Ghana: 26786598
+Guinea: 12275527
+Gambia, The: 1928201
+Guinea-Bissau: 1800513
+Equatorial Guinea: 820885
+Greece: 10957740
+Grenada: 106349
+Greenland: 56295
+Guatemala: 16015494
+Guam: 167543
+Guyana: 763893
+Hong Kong SAR, China: 7241700
+Honduras: 7961680
+Croatia: 4236400
+Haiti: 10572029
+Hungary: 9861673
+Indonesia: 254454778
+Isle of Man: 87127
+India: 1295291543
+Ireland: 4612719
+Iran, Islamic Rep: 78143644
+Iraq: 34812326
+Iceland: 327589
+Israel: 8215300
+Italy: 61336387
+Jamaica: 2721252
+Jordan: 6607000
+Japan: 127131800
+Kazakhstan: 17289111
+Kenya: 44863583
+Kyrgyz Republic: 5834200
+Cambodia: 15328136
+Kiribati: 110470
+St Kitts and Nevis: 54944
+Korea, Rep: 50423955
+Kosovo: 1823149
+Kuwait: 3753121
+Lao PDR: 6689300
+Lebanon: 4546774
+Liberia: 4396554
+Libya: 6258984
+St Lucia: 183645
+Liechtenstein: 37286
+Sri Lanka: 20639000
+Lesotho: 2109197
+Lithuania: 2929323
+Luxembourg: 556074
+Latvia: 1990351
+Macao SAR, China: 577914
+St Martin (French part): 31530
+Morocco: 33921203
+Monaco: 37623
+Moldova: 3556400
+Madagascar: 23571713
+Maldives: 357415
+Mexico: 125385833
+Marshall Islands: 52898
+Macedonia, FYR: 2075625
+Mali: 17086022
+Malta: 427404
+Myanmar: 53437159
+Montenegro: 621800
+Mongolia: 2909871
+Northern Mariana Islands: 54541
+Mozambique: 27216276
+Mauritania: 3969625
+Mauritius: 1260934
+Malawi: 16695253
+Malaysia: 29901997
+Namibia: 2402858
+New Caledonia: 266000
+Niger: 19113728
+Nigeria: 177475986
+Nicaragua: 6013913
+Netherlands: 16854183
+Norway: 5136475
+Nepal: 28174724
+New Zealand: 4509700
+Oman: 4236057
+Pakistan: 185044286
+Panama: 3867535
+Peru: 30973148
+Philippines: 99138690
+Palau: 21097
+Papua New Guinea: 7463577
+Poland: 37995529
+Puerto Rico: 3548397
+Korea, Dem Rep: 25026772
+Portugal: 10397393
+Paraguay: 6552518
+French Polynesia: 279781
+Qatar: 2172065
+Romania: 19910995
+Russian Federation: 143819569
+Rwanda: 11341544
+Saudi Arabia: 30886545
+Sudan: 39350274
+Senegal: 14672557
+Singapore: 5469700
+Solomon Islands: 572171
+Sierra Leone: 6315627
+El Salvador: 6107706
+San Marino: 31595
+Somalia: 10517569
+South Sudan: 11911184
+Sao Tome and Principe: 186342
+Suriname: 538248
+Slovak Republic: 5418506
+Slovenia: 2062218
+Sweden: 9689555
+Swaziland: 1269112
+Seychelles: 91526
+Syrian Arab Republic: 22157800
+Turks and Caicos Islands: 33740
+Chad: 13587053
+Togo: 7115163
+Thailand: 67725979
+Tajikistan: 8295840
+Turkmenistan: 5307188
+Timor-Leste: 1212107
+Tonga: 105586
+Trinidad and Tobago: 1354483
+Tunisia: 10996600
+Turkey: 75932348
+Tuvalu: 9893
+Tanzania: 51822621
+Uganda: 37782971
+Ukraine: 45362900
+Uruguay: 3419516
+Uzbekistan: 30742500
+St Vincent and the Grenadines: 109360
+Venezuela, RB: 30693827
+Virgin Islands (U.S.): 104170
+Vietnam: 90730000
+Vanuatu: 258883
+West Bank and Gaza: 4294682
+Samoa: 191845
+Yemen, Rep: 26183676
+South Africa: 54001953
+Congo, Dem Rep: 4877030
+Zambia: 15721343
+Zimbabwe: 15245855
+Alabama: 4822023.00
+Alaska: 731449.00
+Arizona: 6553255.00
+Arkansas: 2949131.00
+California: 38041430.00
+Colorado: 5187582.00
+Connecticut: 3590347.00
+Delaware: 917092.00
+Florida: 19317568.00
+Georgia: 9919945.00
+Hawaii: 1392313.00
+Idaho: 1595728.00
+Illinois: 12875255.00
+Indiana: 6537334.00
+Iowa: 3074186.00
+Kansas: 2885905.00
+Kentucky: 4380415.00
+Louisiana: 4601893.00
+Maine: 1329192.00
+Maryland: 5884563.00
+Massachusetts: 6646144.00
+Michigan: 9883360.00
+Minnesota: 5379139.00
+Mississippi: 2984926.00
+Missouri: 6021988.00
+Montana: 1005141.00
+Nebraska: 1855525.00
+Nevada: 2758931.00
+New Hampshire: 1320718.00
+New Jersey: 8864590.00
+New Mexico: 2085538.00
+New York: 19570261.00
+North Carolina: 9752073.00
+North Dakota: 699628.00
+Ohio: 11544225.00
+Oklahoma: 3814820.00
+Oregon: 3899353.00
+Pennsylvania: 12763536.00
+Rhode Island: 1050292.00
+South Carolina: 4723723.00
+South Dakota: 833354.00
+Tennessee: 6456243.00
+Texas: 26059203.00
+Utah: 2855287.00
+Vermont: 626011.00
+Virginia: 8185867.00
+Washington: 6897012.00
+West Virginia: 1855413.00
+Wisconsin: 5726398.00
+Wyoming: 576412.00
+262
+World: Aruba
+World: Andorra
+World: Afghanistan
+World: Angola
+World: Albania
+World: United Arab Emirates
+World: Argentina
+World: Armenia
+World: American Samoa
+World: Antigua and Barbuda
+World: Australia
+World: Austria
+World: Azerbaijan
+World: Burundi
+World: Belgium
+World: Benin
+World: Burkina Faso
+World: Bangladesh
+World: Bulgaria
+World: Bahrain
+World: Bahamas, The
+World: Bosnia and Herzegovina
+World: Belarus
+World: Belize
+World: Bermuda
+World: Bolivia
+World: Brazil
+World: Barbados
+World: Brunei Darussalam
+World: Bhutan
+World: Botswana
+World: Central African Republic
+World: Canada
+World: Switzerland
+World: Channel Islands
+World: Chile
+World: China
+World: Cote d'Ivoire
+World: Cameroon
+World: Congo, Rep
+World: Colombia
+World: Comoros
+World: Cabo Verde
+World: Costa Rica
+World: Cuba
+World: Curacao
+World: Cayman Islands
+World: Cyprus
+World: Czech Republic
+World: Germany
+World: Djibouti
+World: Dominica
+World: Denmark
+World: Dominican Republic
+World: Algeria
+World: Ecuador
+World: Egypt, Arab Rep
+World: Eritrea
+World: Spain
+World: Estonia
+World: Ethiopia
+World: Finland
+World: Fiji
+World: France
+World: Faeroe Islands
+World: Micronesia, Fed Sts
+World: Gabon
+World: United Kingdom
+World: Georgia
+World: Ghana
+World: Guinea
+World: Gambia, The
+World: Guinea-Bissau
+World: Equatorial Guinea
+World: Greece
+World: Grenada
+World: Greenland
+World: Guatemala
+World: Guam
+World: Guyana
+World: Hong Kong SAR, China
+World: Honduras
+World: Croatia
+World: Haiti
+World: Hungary
+World: Indonesia
+World: Isle of Man
+World: India
+World: Ireland
+World: Iran, Islamic Rep
+World: Iraq
+World: Iceland
+World: Israel
+World: Italy
+World: Jamaica
+World: Jordan
+World: Japan
+World: Kazakhstan
+World: Kenya
+World: Kyrgyz Republic
+World: Cambodia
+World: Kiribati
+World: St Kitts and Nevis
+World: Korea, Rep
+World: Kosovo
+World: Kuwait
+World: Lao PDR
+World: Lebanon
+World: Liberia
+World: Libya
+World: St Lucia
+World: Liechtenstein
+World: Sri Lanka
+World: Lesotho
+World: Lithuania
+World: Luxembourg
+World: Latvia
+World: Macao SAR, China
+World: St Martin (French part)
+World: Morocco
+World: Monaco
+World: Moldova
+World: Madagascar
+World: Maldives
+World: Mexico
+World: Marshall Islands
+World: Macedonia, FYR
+World: Mali
+World: Malta
+World: Myanmar
+World: Montenegro
+World: Mongolia
+World: Northern Mariana Islands
+World: Mozambique
+World: Mauritania
+World: Mauritius
+World: Malawi
+World: Malaysia
+World: Namibia
+World: New Caledonia
+World: Niger
+World: Nigeria
+World: Nicaragua
+World: Netherlands
+World: Norway
+World: Nepal
+World: New Zealand
+World: Oman
+World: Pakistan
+World: Panama
+World: Peru
+World: Philippines
+World: Palau
+World: Papua New Guinea
+World: Poland
+World: Puerto Rico
+World: Korea, Dem Rep
+World: Portugal
+World: Paraguay
+World: French Polynesia
+World: Qatar
+World: Romania
+World: Russian Federation
+World: Rwanda
+World: Saudi Arabia
+World: Sudan
+World: Senegal
+World: Singapore
+World: Solomon Islands
+World: Sierra Leone
+World: El Salvador
+World: San Marino
+World: Somalia
+World: South Sudan
+World: Sao Tome and Principe
+World: Suriname
+World: Slovak Republic
+World: Slovenia
+World: Sweden
+World: Swaziland
+World: Seychelles
+World: Syrian Arab Republic
+World: Turks and Caicos Islands
+World: Chad
+World: Togo
+World: Thailand
+World: Tajikistan
+World: Turkmenistan
+World: Timor-Leste
+World: Tonga
+World: Trinidad and Tobago
+World: Tunisia
+World: Turkey
+World: Tuvalu
+World: Tanzania
+World: Uganda
+World: Ukraine
+World: Uruguay
+World: United States
+World: Uzbekistan
+World: St Vincent and the Grenadines
+World: Venezuela, RB
+World: Virgin Islands (U.S.)
+World: Vietnam
+World: Vanuatu
+World: West Bank and Gaza
+World: Samoa
+World: Yemen, Rep
+World: South Africa
+World: Congo, Dem Rep
+World: Zambia
+World: Zimbabwe
+United States: Alabama
+United States: Alaska
+United States: Arizona
+United States: Arkansas
+United States: California
+United States: Colorado
+United States: Connecticut
+United States: Delaware
+United States: Florida
+United States: Georgia
+United States: Hawaii
+United States: Idaho
+United States: Illinois
+United States: Indiana
+United States: Iowa
+United States: Kansas
+United States: Kentucky
+United States: Louisiana
+United States: Maine
+United States: Maryland
+United States: Massachusetts
+United States: Michigan
+United States: Minnesota
+United States: Mississippi
+United States: Missouri
+United States: Montana
+United States: Nebraska
+United States: Nevada
+United States: New Hampshire
+United States: New Jersey
+United States: New Mexico
+United States: New York
+United States: North Carolina
+United States: North Dakota
+United States: Ohio
+United States: Oklahoma
+United States: Oregon
+United States: Pennsylvania
+United States: Rhode Island
+United States: South Carolina
+United States: South Dakota
+United States: Tennessee
+United States: Texas
+United States: Utah
+United States: Vermont
+United States: Virginia
+United States: Washington
+United States: West Virginia
+United States: Wisconsin
+United States: Wyoming

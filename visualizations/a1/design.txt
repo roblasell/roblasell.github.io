@@ -1,0 +1,20 @@
+Viz Assignment 1: Squarified Treemap
+Team Members: Steph Cleland & Rob Lasell
+
+We used color to further clarify the structure of the tree to the human 
+eye. We accomplished this by setting a color as the color of the root 
+canvas, and setting a darker color as the color of the leaves, with all 
+intermediate canvases getting progressively darker to create a natural 
+progression. Additionally, we made our treemap display data about the nodes 
+(the id and value) as the mouse pointer passes over them. Both of these 
+changes help a user interpret the data more easily.
+
+We also attempted to modify our treemap to accept other types of data; 
+specifically, we used world population data such that each country was 
+represented as a node whose size is given by the total population of the 
+country. This is interesting because it is a way to visualize population 
+data that differs from traditional visualizations of that data, which tend 
+to use color gradiation to represent the population on a world map. Because 
+we did not realize that 2 versions could be submitted, we added a boolean 
+flag that must be set in order to use data (like our world population 
+data) that is separated by a colon instead of a space.

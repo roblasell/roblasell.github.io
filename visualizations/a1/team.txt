@@ -1,0 +1,5 @@
+Viz Assignment 1: Squarified Treemap
+Team Members: Steph Cleland & Rob Lasell
+
+Both team members worked together to design and code every part 
+of the assignment.
