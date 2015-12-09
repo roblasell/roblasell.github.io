@@ -234,7 +234,7 @@ void setLeafValues(String[] lines) {
     float value = parseFloat(line[1]);
     int index = indexOfNode(id);
     
-    println(id);
+    //println(id);
     nodes[index].value = value;
   }
 }
