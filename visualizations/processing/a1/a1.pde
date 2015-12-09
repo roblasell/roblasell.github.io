@@ -3,7 +3,7 @@
 // 19 September 2015
 
 boolean usingColonSeparatedData = false;
-String path = "/processing/a1/hierarchy3.shf";
+String path = "visualizations/processing/a1/hierarchy3.shf";
 Node root = null;
 Node currentRoot = null;
 Node[] nodes = null;
