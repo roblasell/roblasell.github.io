@@ -2,7 +2,7 @@
 // Chase Conley & Rob Lasell
 
 Table data;
-String filePath = "soe-funding.csv";
+String filePath = "processing/a4/data/soe-funding.csv";
 Treemap treemap;
 LineGraph linegraph;
 FlowGraph flowgraph;
