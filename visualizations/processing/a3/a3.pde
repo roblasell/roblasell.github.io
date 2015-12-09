@@ -56,7 +56,7 @@ void setup() {
 }
 
 void draw() {
-  clear();
+  //clear();
   background(backgroundColor);
   
   fill(0);
