@@ -26,7 +26,7 @@ float baseDarkBlue = 169;
 int highlightColor = color(255, 254, 179);
 
 void setup() {
-  size(900, 400);
+  size(900, 500);
   //700,600 seems ideal
   
   //if (frame != null) {
