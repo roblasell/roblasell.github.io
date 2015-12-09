@@ -131,10 +131,13 @@ boolean checkMouseHover(Node n) {
     n.canvas.render(highlightColor);
     n.renderChildren();
     fill(0);
+
+    // temporary fix to Processing.js lacking String.format
     float a = n.value * 100;
     int b = a;
     float c = b;
     c = c / 100;
+
     String t = n.id + ": " + c; //+ String.format("%.1f", n.value);
     text(t, mouseX, mouseY);
   }
