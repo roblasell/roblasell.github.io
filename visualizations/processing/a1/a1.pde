@@ -131,7 +131,11 @@ boolean checkMouseHover(Node n) {
     n.canvas.render(highlightColor);
     n.renderChildren();
     fill(0);
-    String t = n.id + ": " + String.format("%.1f", n.value);
+    float a = n.value * 100;
+    int b = f;
+    float c = b;
+    c = c / 100;
+    String t = n.id + ": " + c; //+ String.format("%.1f", n.value);
     text(t, mouseX, mouseY);
   }
   return true;
