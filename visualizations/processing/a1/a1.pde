@@ -132,7 +132,7 @@ boolean checkMouseHover(Node n) {
     n.renderChildren();
     fill(0);
     float a = n.value * 100;
-    int b = f;
+    int b = a;
     float c = b;
     c = c / 100;
     String t = n.id + ": " + c; //+ String.format("%.1f", n.value);
