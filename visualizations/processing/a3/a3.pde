@@ -25,7 +25,7 @@ int numNodes;
 int numEdges;
 Node[] nodes;
 Edge[] edges;
-String filePath = "data1.csv";
+String filePath = "processing/a3/data/data1.csv";
 
 boolean dragging = false;
 boolean draggingSlider = false;
