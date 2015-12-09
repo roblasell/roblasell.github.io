@@ -37,9 +37,6 @@ void setup() {
 }
 
 void draw() {
-
-  noStroke();
-
   background(color(baseLightRed, baseLightGreen, baseLightBlue));
   treeDepth = calculateTreeDepth(currentRoot);
   

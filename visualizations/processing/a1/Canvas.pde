@@ -29,11 +29,13 @@ class Canvas {
   }
   
   void render(color c) {
+    noStroke();
     fill(c);
     rect(x, y, w, h);
   }
   
   void render() {
+    noStroke();
     fill(col);
     rect(x, y, w, h);
   }
