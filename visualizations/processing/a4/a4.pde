@@ -1,5 +1,5 @@
 // Visualization Assignment 4: Coordinated-Multiple Views (CMV)
-// Chase Conley & Rob Lasell
+// Rob Lasell
 
 Table data;
 String filePath = "processing/a4/data/soe-funding.csv";
