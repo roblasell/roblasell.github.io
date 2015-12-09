@@ -1,0 +1,8 @@
+I implemented a few extra features for this project.
+
+- I added a nice color scheme to inprove the user's visual experience.
+- I added a drop-down menu for the options so that the canvas could be open for physics simulation most of the time.
+- I made a slider class and added sliders for the various constants so that the physical laws of the simulation can be changed and experimented with on the fly.
+- I added the option to use a "centering force" that causes the whole system to gravitate towards the center of the window, and created a checkbox to toggle the feature on and off.
+- I added the ability to pause the simulation so that the user can have more precise control over where the nodes are placed.
+- I added the ability to "fix" nodes in place so that the user can experiment with how the simulation responds to certain fixed positions.

@@ -1,0 +1,21 @@
+Viz Assignment 2: Animated Transitions
+Team Members: Steph Cleland & Rob Lasell
+
+To improve the design of our graphs and transitions, we created a 
+gradient of colors to visually distinguish the data points, which 
+helps the user keep track of distinct data points during transitions,
+especially in the transition from bar to pie, and back.
+
+Additionally, we made the pie chart and bar chart highlight-able and
+able to display a tool-tip containting data about that bar/pie slice 
+as the mouse pointer passes over them. We elected not to make the line 
+graph highlight-able, given that that is not the normal way one would 
+interact with a line graph. We believe this feature increases 
+useability and understanding of the graphs and data.
+
+For our transition from bar to pie, we made it clear that 
+the height of the bar maps to the percentage of the pie chart. By 
+moving the bars into a circle and then rotating them in to form the pie 
+chart, it very clear what the mapping between the two is. In addition, 
+our final transition into the pie chart, where each pie slice is 
+revealed, is not only fun, but also cool! We're very proud of it.
