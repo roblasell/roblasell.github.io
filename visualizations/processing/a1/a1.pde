@@ -26,7 +26,8 @@ float baseDarkBlue = 169;
 int highlightColor = color(255, 254, 179);
 
 void setup() {
-  size(700, 800);
+  size(900, 400);
+  //700,600 seems ideal
   
   //if (frame != null) {
   //  frame.setResizable(true);
