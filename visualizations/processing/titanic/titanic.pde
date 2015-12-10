@@ -3,9 +3,9 @@
 // Steph Cleland & Rob Lasell
 // Life expectancy data from http://ourworldindata.org/data/population-growth-vital-statistics/life-expectancy/
 
-String birthFilename = "birth.txt";
-String deathFilename = "death.txt";
-String dataFilename  = "titanic-data.tsv";
+String birthFilename = "processing/titanic/data/birth.txt";
+String deathFilename = "processing/titanic/data/death.txt";
+String dataFilename  = "processing/titanic/data/titanic-data.tsv";
 
 int DISASTER_YEAR = 1912;
 int DISASTER_MONTH = 4;
