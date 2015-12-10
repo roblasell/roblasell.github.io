@@ -10,14 +10,21 @@ String dataFilename  = "processing/titanic/data/titanic-data.tsv";
 int DISASTER_YEAR = 1912;
 int DISASTER_MONTH = 4;
 int DISASTER_DAY = 15;
+int disasterNum;
 
 int earliestDay = 17;
 int earliestMonth = 5;
 int earliestYear = 1837;
 
 int latestDay = 0;
+
 float widthPercent = 0.9;
 float heightPercent = 0.5;
+float axisX1;
+float axisX2;
+float axisY;
+
+float pxPerDay;
 
 // average life expectancy in 1912
 HashMap<Integer, Integer> lifeExpectancies;
@@ -28,6 +35,13 @@ void setup() {
   setupTable();
   setupMaps();
   inputData();
+  
+  disasterNum = computeDay("15th April 1912");
+  pxPerDay = width * widthPercent / latestDay;
+  
+  axisX1 = width * ((1 - widthPercent) / 2);
+  axisX2 = width * (widthPercent / 2);
+  axisY = height * heightPercent;
   
   size(1200, 400);
 }
@@ -40,6 +54,6 @@ void draw() {
 
 void drawAxis() {
   stroke(200);
-  line((width * ((1 - widthPercent) / 2)), height * heightPercent, (width * (widthPercent / 2)), height * heightPercent);
-  
+  line(axisX1, axisY, axisX2, axisY);
+  line(axisX1 + (pxPerDay * disasterNum), axisY + 5, axisX1 + (pxPerDay * disasterNum), axisY - 5);
 }
