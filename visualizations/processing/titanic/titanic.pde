@@ -122,12 +122,15 @@ void inputData() {
     newRow.setString("job", line[5]);
     
     String classString = line[2];
-    char classChar = (classString.toCharArray())[0];
+    String classChar = classString.substring(0, 1);
+    //char classChar = (classString.toCharArray())[0];
     int classInt;
-    if (Character.isLetter(classChar)) {
+    //if (Character.isLetter(classChar)) {
+      if (classChar.match(/[a-z]/i)) {
       classInt = 0;
     } else {
-      classInt = Character.getNumericValue(classChar);
+      //classInt = Character.getNumericValue(classChar);
+      classInt = parseInt(classChar);
     }
     newRow.setInt("class", classInt);
     
