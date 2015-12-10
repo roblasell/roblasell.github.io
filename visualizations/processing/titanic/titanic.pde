@@ -18,7 +18,7 @@ int earliestYear = 1837;
 // average life expectancy in 1912
 HashMap<Integer, Integer> lifeExpectancies;
 HashMap<String, Integer> months;
-Table table;
+JSTable table;
 
 void setup() {
   setupTable();
@@ -34,7 +34,7 @@ void draw() {
 }
 
 void setupTable() {
-  table = new Table();
+  table = new JSTable();
   table.addColumn("id");
   table.addColumn("age");
   table.addColumn("name");
@@ -103,6 +103,7 @@ void inputData() {
   }
   
   String[] lines = loadStrings(dataFilename);
+  int rowCounter = 0;
   
   for (int i = 1; i < lines.length; i++) {
     String[] line = split(lines[i], "\t");
@@ -112,9 +113,9 @@ void inputData() {
       continue;
     }
     
-    TableRow newRow = table.addRow();
+    JSTableRow newRow = table.addRow();
     
-    newRow.setInt("id", table.lastRowIndex());
+    newRow.setInt("id", rowCounter++);
     newRow.setString("name", line[0]);
     newRow.setString("sex", line[8]);
     newRow.setInt("survived", parseInt(line[7]));
@@ -155,10 +156,8 @@ void inputData() {
     newRow.setString("death_date", death_date);
   }
   
-  println(count);
-  
-  for (TableRow row : table.rows()) {
-    //println(row.getString("name") + row.getString("death_date"));
+  for (JSTableRow row : table.rows()) {
+    println(row.getString("name") + " " + row.getString("death_date"));
   }
 }
 
