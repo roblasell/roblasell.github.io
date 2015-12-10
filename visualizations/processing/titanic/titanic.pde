@@ -43,17 +43,18 @@ void setup() {
   axisX2 = width * (widthPercent / 2);
   axisY = height * heightPercent;
   
-  size(1200, 400);
+  size(1200, 600);
 }
 
 void draw() {
   background(50);
   fill(255, 0, 0);
-  ellipse(width / 2, height / 2, 100, 100);
+  //ellipse(width / 2, height / 2, 100, 100);
 }
 
 void drawAxis() {
   stroke(200);
+  fill(200);
   line(axisX1, axisY, axisX2, axisY);
   line(axisX1 + (pxPerDay * disasterNum), axisY + 5, axisX1 + (pxPerDay * disasterNum), axisY - 5);
 }
