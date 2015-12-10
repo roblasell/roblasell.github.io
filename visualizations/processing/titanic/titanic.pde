@@ -16,6 +16,8 @@ int earliestMonth = 5;
 int earliestYear = 1837;
 
 int latestDay = 0;
+float widthPercent = 0.9;
+float heightPercent = 0.5;
 
 // average life expectancy in 1912
 HashMap<Integer, Integer> lifeExpectancies;
@@ -31,6 +33,13 @@ void setup() {
 }
 
 void draw() {
+  background(50);
   fill(255, 0, 0);
   ellipse(width / 2, height / 2, 100, 100);
+}
+
+void drawAxis() {
+  stroke(200);
+  line((width * ((1 - widthPercent) / 2)), height * heightPercent, (width * (widthPercent / 2)), height * heightPercent);
+  
 }
