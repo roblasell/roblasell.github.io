@@ -116,7 +116,8 @@ StoryButton[] stories;
 void setup() {
   //PFont raleway = loadFont(font);
   //textFont(raleway);
-  textFont("Century Gothic");
+  PFont gothic = createFont("Century Gothic", 12);
+  textFont(gothic);
   
   setupTable();
   setupMaps();
@@ -331,6 +332,8 @@ void checkMouseHover() {
     renderStory();
   }
 }
+
+
 
 void tooltip(JSTableRow row) {
   String t = "";
