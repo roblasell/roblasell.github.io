@@ -100,6 +100,8 @@ boolean renderingBlurb;
 
 int rowsFilteredIn = 1;
 int rowsFilteredOut = 0;
+int survivorsFilteredIn = 1;
+int victimsFilteredIn = 0;
 
 float canvasWidth = 1200;
 float canvasHeight = 800;
@@ -463,6 +465,8 @@ void mouseClicked() {
 void filterTable() {
   rowsFilteredIn = 0;
   rowsFilteredOut = 0;
+  victimsFilteredIn = 0;
+  survivorsFilteredIn = 0;
   
   for (JSTableRow row : table.rows()) {
     String currentCategory = "";
@@ -498,6 +502,11 @@ void filterTable() {
     if (!filtered) {
       rowsFilteredIn++;
       row.setInt("filtered_out", 0);
+      if (row.getInt("survived") == 1) {
+        survivorsFilteredIn++;
+      } else {
+        victimsFilteredIn++;
+      }
     }
   }
   

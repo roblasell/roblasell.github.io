@@ -63,6 +63,14 @@ class FilterMenu {
     fill(filterTextColor);
     textSize(13);
     text("Clear All", buttonX + 10, buttonY + 15);
+    
+    // render filter message
+    if (rowsFilteredIn != 0) {
+      String t1 = (int)(survivorsFilteredIn / rowsFilteredIn) + "% of people in the selected categories survived";
+      String t1 = (int)(victimsFilteredIn / rowsFilteredIn) + "% of people in the selected categories died";
+      
+      text(t1, x + 10, buttonY + 40, w - 20, 40);
+    }
   }
   
   void addFilter(float _x, float _y, float _w, float _h, String _text, String _value, String _category) {
