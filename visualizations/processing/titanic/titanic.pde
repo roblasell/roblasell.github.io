@@ -98,10 +98,10 @@ PImage icebergImg;
 
 boolean renderingBlurb;
 
-int rowsFilteredIn = 1;
+int rowsFilteredIn = 2153;
 int rowsFilteredOut = 0;
-int survivorsFilteredIn = 1;
-int victimsFilteredIn = 0;
+int survivorsFilteredIn = 699;
+int victimsFilteredIn = 1454;
 
 float canvasWidth = 1200;
 float canvasHeight = 800;
