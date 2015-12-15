@@ -24,7 +24,7 @@ class JSTable {
     // check if low is smaller then high, if not then the array is sorted
     if (low < high) {
       // Get the index of the element which is in the middle
-      int middle = low + (high - low) / 2;
+      int middle = parseInt(low + (high - low) / 2);
       // Sort the left side of the array
       mergesort(low, middle, temp, columnName);
       // Sort the right side of the array
@@ -52,11 +52,11 @@ class JSTable {
       if (temp.get(j) == null) {
         console.log(i);
         console.log(j);
-        console.log("ieOH NO!");
+        console.log("new OH NO!");
       } else {
         console.log(i);
         console.log(j);
-        console.log("ieOH YES!");
+        console.log("new OH YES!");
       }
       
       if (temp.get(i).getInt(columnName) <= temp.get(j).getInt(columnName)) {
