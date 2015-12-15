@@ -263,7 +263,7 @@ void makeFilters() {
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "3rd Class", "3", "class");
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Crew", "0", "class");
   i++; // age
-  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "0 - 18", "0 - 18", "age");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "0 - 16", "0 - 16", "age");
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "19 - 39", "19 - 39", "age");
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "40+", "40+", "age");
   i++; // survived
