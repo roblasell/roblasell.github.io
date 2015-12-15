@@ -1,3 +1,5 @@
+int randomAgeRange = 15;
+
 void setupTable() {
   table = new JSTable();
   table.addColumn("id");
@@ -12,6 +14,13 @@ void setupTable() {
   table.addColumn("ticket");
   table.addColumn("survived");
   table.addColumn("job");
+  table.addColumn("color");
+  table.addColumn("x");
+  table.addColumn("y");
+  table.addColumn("radius");
+  table.addColumn("filtered_out");
+  table.addColumn("converted_name");
+  table.addColumn("true_death_int");
 }
 
 void setupMaps() {
@@ -58,6 +67,7 @@ void inputData() {
   String[] deathInput = loadStrings(deathFilename);
   for (int i = 0; i < deathInput.length; i++) {
     String[] line = split(deathInput[i], " - ");
+    deaths.put(line[0], line[1]);
     //println(line[0] + " died on " + line[1]);
   }
   
@@ -72,7 +82,11 @@ void inputData() {
   
   for (int i = 1; i < lines.length; i++) {
     String[] line = split(lines[i], "\t");
+    
     int age =  parseInt(line[1]);
+    if (age > maxAgeAtDisaster) {
+      maxAgeAtDisaster = age;
+    }
     
     if (line[1].equals("")) {
       continue;
@@ -82,22 +96,33 @@ void inputData() {
     
     newRow.setInt("id", rowCounter++);
     newRow.setString("name", line[0]);
+    newRow.setString("converted_name", convertName(line[0]));
     newRow.setString("sex", line[8]);
     newRow.setInt("survived", parseInt(line[7]));
     newRow.setString("job", line[5]);
+    newRow.setInt("filtered_out", 0);
     
     String classString = line[2];
-    String classChar = classString.substring(0, 1);
-    //char classChar = (classString.toCharArray())[0];
     int classInt;
-    //if (Character.isLetter(classChar)) {
+    
+    /* JAVASCRIPT */
+    String classChar = classString.substring(0, 1);
     //the line below is JavaScript, not Java!
     if (classChar.match(/[A-Z]/i)) {
       classInt = 0;
     } else {
-      //classInt = Character.getNumericValue(classChar);
       classInt = parseInt(classChar);
     }
+    
+    /* NONJAVASCRIPT
+    char classChar = (classString.toCharArray())[0];
+    if (Character.isLetter(classChar)) {
+      classInt = 0;
+    } else {
+      classInt = Character.getNumericValue(classChar);
+    }
+    */
+    
     newRow.setInt("class", classInt);
     
     String[] ticketData = split(line[3], " ");
@@ -111,22 +136,48 @@ void inputData() {
     }
     
     if (death_date == null || line[7].equals("0")) {
-      int year = parseInt(birth_date.substring(birth_date.length() - 4, birth_date.length())) + lifeExpectancies.get(age / 5);
+      if (line[0].equals("DEAN, Miss Elizabeth Gladys 'Millvina'")) {
+        println("HALP!" + deaths.get(line[0]));
+      }
+      int randomness = (int)(Math.random() * randomAgeRange) - (randomAgeRange / 2);
+      int year = parseInt(birth_date.substring(birth_date.length() - 4, birth_date.length())) + lifeExpectancies.get(age / 5) + randomness;
       
       death_date = birth_date.substring(0, birth_date.length() - 4) + year;
     }
     
     newRow.setInt("age",age);
     
-    newRow.setInt("birth_int", computeDay(birth_date));
-    newRow.setInt("death_int", computeDay(death_date));
+    int deathInt = computeDay(death_date);
+    int birthInt = computeDay(birth_date);
+    if (deathInt - birthInt > maxAgeInt) {
+      maxAgeInt = deathInt - birthInt;
+    }
+    
+    newRow.setInt("birth_int", birthInt);
+    newRow.setInt("death_int", deathInt);
     
     newRow.setString("birth_date", birth_date);
     newRow.setString("death_date", death_date);
+    
+    int variation = 80;
+    
+    if (line[7].equals("0")) {
+      int r = ((int)(Math.random() * variation) - (variation / 2)) + victimRed;
+      int g = ((int)(Math.random() * variation) - (variation / 2)) + victimGreen;
+      int b = ((int)(Math.random() * variation) - (variation / 2)) + victimBlue;
+      newRow.setInt("true_death_int", disasterNum);
+      newRow.setInt("color", color(r, g, b));
+    } else {
+      int r = ((int)(Math.random() * variation) - (variation / 2)) + survivorRed;
+      int g = ((int)(Math.random() * variation) - (variation / 2)) + survivorGreen;
+      int b = ((int)(Math.random() * variation) - (variation / 2)) + survivorBlue;
+      newRow.setInt("true_death_int", deathInt);
+      newRow.setInt("color", color(r, g, b));
+    }
   }
   
   for (JSTableRow row : table.rows()) {
-    println(row.getString("name") + " " + row.getString("death_date"));
+    //println(row.getString("name") + " " + row.getString("death_date"));
   }
 }
 
@@ -156,4 +207,61 @@ int computeDay(String date) {
   }
 
   return toReturn;
+}
+
+void calculateArcs() {
+  for (int i = table.rows().size() - 1; i >= 0; i--) {
+    JSTableRow row = table.getRow(i);
+    float angle = getAngle(row);
+    calculateArc(row, angle);
+  }
+}
+
+void calculateArc(JSTableRow row, float angle) {
+  int birthInt = row.getInt("birth_int");
+  
+  float w = pxPerDay * (row.getInt("death_int") - birthInt);
+  float midX = (w / 2) + (pxPerDay * birthInt);
+  
+  float extraY = 0;
+  float d = w;
+  
+  if (tan(angle / 2) != 0) {
+    extraY = w / (2 * tan(angle / 2));
+  }
+  
+  if (sin(angle / 2) != 0) {
+    d = w / sin(angle / 2);
+  }
+  
+  row.setFloat("x", midX + axisX1);
+  row.setFloat("y", axisY + extraY);
+  row.setFloat("radius", d / 2);
+}
+
+float menuPadding = 15;
+
+void makeFilters() {
+  filterMenu = new FilterMenu(width * 0.85, 0 + menuPadding, width * 0.15 - menuPadding, height - (menuPadding * 2));
+  
+  float currentHeight = 0.1 * height;
+  float filterHeight = 15;
+  float filterX = 0.865 * width;
+  int i = 0;
+  
+  i++; // sex
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Male", "M", "sex");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Female", "F", "sex");
+  i++; // class
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "1st Class", "1", "class");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "2nd Class", "2", "class");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "3rd Class", "3", "class");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Crew", "0", "class");
+  i++; // age
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "0 - 18", "0 - 18", "age");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "19 - 39", "19 - 39", "age");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "40+", "40+", "age");
+  i++; // survived
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Yes", "1", "survived");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "No", "0", "survived");
 }

@@ -81,7 +81,7 @@ ASPLUND, Master Edvin Rojj Felix	3	3rd Class Passenger	347077 £31 7s 9d	Southam
 ASPLUND, Master Filip Oscar	13	3rd Class Passenger	347077 £31 7s 9d	Southampton			0	M
 ASPLUND, Miss Lillian Gertrud	5	3rd Class Passenger	347077 £31 7s 9d	Southampton		15	1	F
 ASPLUND, Mr Carl Oscar Vilhelm Gustafsson	40	3rd Class Passenger	347077 £31 7s 9d	Southampton	General Labourer	[142]	0	M
-ASPLUND, Mr Johan Charles	23	3rd Class Passenger	350054 £7 15s 11d	Southampton		13	1	M
+ASPLUND, Mr Johan Charles	13	3rd Class Passenger	350054 £7 15s 11d	Southampton		13	1	M
 ASPLUND, Mrs Selma Augusta Emilia	38	3rd Class Passenger	347077 £31 7s 9d	Southampton		15	1	F
 ASSAF, Mrs Mariana	45	3rd Class Passenger	2696 £7 4s 6d	Cherbourg		C	1	F
 ASSAM, Mr Ali	23	3rd Class Passenger	3101309 £7 1s	Southampton	General Labourer		0	M
@@ -353,7 +353,7 @@ CARTWRIGHT, Mr James Edward	32	Victualling Crew		Belfast	Saloon Steward	[320]	0	
 CARVER, Mr Alfred John	28	3rd Class Passenger	370160 £7 5s	Southampton	Seaman		0	M
 CASALI, Sig. Giulio	32	Restaurant Staff		Southampton	Waiter		0	M
 CASE, Mr Howard Brown	49	1st Class Passenger	19924 £26	Southampton			0	M
-CASEY, Mr Thomas	28	Engineering Crew		Southampton	Trimmer		0	M
+CASEY, Mr Thomas	45	Engineering Crew		Southampton	Trimmer		0	M
 CASSEBEER, Mrs Eleanor Genevieve	36	1st Class Passenger	17770 £27 14s 5d	Cherbourg		5	1	F
 CASSWILL, Mr Charles	34	Victualling Crew		Southampton	Saloon Steward		0	M
 CASTLEMAN, Mr Edward	37	Engineering Crew		Southampton	Greaser		0	M
@@ -875,8 +875,8 @@ HEALY, Miss Honor	29	3rd Class Passenger	370375 £7 15s	Queenstown		16	1	F
 HEBB, Mr William Albert	22	Engineering Crew		Southampton	Trimmer	B	1	M
 HEDMAN, Mr Oskar Arvid	27	3rd Class Passenger	347089 £6 19s 6d	Southampton	Settler Recruiter	15	1	M
 HEE, Mr Ling	24	3rd Class Passenger	1601 £56 9s 11d	Southampton	Seaman	C	1	M
-HEGARTY, Miss Hanora	18	3rd Class Passenger	365226 £6 15s	Queenstown			0	F
-HEIKKINEN, Miss Laina	26	3rd Class Passenger	3101282 £7 18s 6d	Southampton			1	F
+HEGARTY, Miss Hanora	20	3rd Class Passenger	365226 £6 15s	Queenstown			0	F
+HEIKKINEN, Miss Laina	16	3rd Class Passenger	3101282 £7 18s 6d	Southampton			1	F
 HEINEN, Mr Joseph Dominichus	30	Victualling Crew		Southampton	Saloon Steward (2nd class)		0	M
 HEININEN, Miss Wendla Maria	23	3rd Class Passenger	3101290 £7 18s 6d	Southampton	Servant	[8]	0	F
 HELLSTRöM, Miss Hilda Maria	22	3rd Class Passenger	7548 £8 19s 3d	Southampton		C	1	F
@@ -1280,7 +1280,6 @@ MATTHEWS, Mr William John		2nd Class Passenger	28228 £13	Southampton	China Clay
 MATTMANN, Sig. Adolf	20	Restaurant Staff		Southampton	Ice Man		0	M
 MAUGE, Mr Paul Achille Maurice Germain	25	Restaurant Staff		Southampton	Kitchen Clerk		1	M
 MAXWELL, Mr John	31	Deck Crew		Belfast	Carpenter / Joiner		0	M
-MAY, Mr Arthur William	24	Engineering Crew		Southampton	Fireman		0	M
 MAY, Mr Arthur William	59	Engineering Crew		Southampton	Fireman Messman		0	M
 MAYBERY, Mr Frank Hubert	36	2nd Class Passenger	239059 £16	Southampton	Property Developer / Real Estate		0	M
 MAYNARD, Mr Isaac Hiram	31	Victualling Crew		Belfast	Entrée Cook	B	1	M
@@ -1693,7 +1692,7 @@ RIGOZZI, Sig. Abele	22	Restaurant Staff		Southampton	Assistant Waiter	[115]	0	M
 RIIHIVUORI, Miss Susanna Juhantytär	22	3rd Class Passenger	3101295 £39 13s 9d	Southampton			0	F
 RIMMER, Mr Gilbert	28	Victualling Crew		Southampton	Saloon Steward		0	M
 RINTAMäKI, Mr Matti	35	3rd Class Passenger	3101273 £7 2s 6d	Southampton	General Labourer		0	M
-RIORDAN, Miss Hannah	18	3rd Class Passenger	334915 £7 14s 5d	Queenstown		13	1	F
+RIORDAN, Miss Hannah	22	3rd Class Passenger	334915 £7 14s 5d	Queenstown		13	1	F
 RISIEN, Mr Samuel Beard	69	3rd Class Passenger	364498 £14 10s	Southampton	Hotelier		0	M
 RISIEN, Mrs Emma Jane	58	3rd Class Passenger	364498 £14 10s	Southampton			0	F
 ROBERT, Mrs Elisabeth Walton	43	1st Class Passenger	24160 £211 6s 9d	Southampton	Of Independent Means	2	1	F
@@ -1872,7 +1871,7 @@ SMILJANIC, Mr Mile	37	3rd Class Passenger	315037 £8 13s 3d	Southampton	Farm Lab
 SMILLIE, Mr John	29	Victualling Crew		Belfast	Saloon Steward	[91]	0	M
 SMITH, Captain Edward John	62	Deck Crew Titanic Officers		Southampton	Master		0	M
 SMITH, Miss Katherine Elizabeth	44	Victualling Crew		Southampton	Stewardess		1	F
-SMITH, Miss Marion Elsie	39	2nd Class Passenger	31418 £13	Southampton		9	1	F
+SMITH, Miss Marion Elsie	49	2nd Class Passenger	31418 £13	Southampton		9	1	F
 SMITH, Mr Charles	38	Victualling Crew		Southampton	Kitchen Porter		0	M
 SMITH, Mr Charles Edwin	38	Victualling Crew		Southampton	2nd Class Bedroom Steward	[329]	0	M
 SMITH, Mr Emest George	27	Engineering Crew		Southampton	Trimmer		0	M
@@ -1966,7 +1965,7 @@ TAUSSIG, Miss Ruth	18	1st Class Passenger	110413 £79 13s	Southampton		8	1	F
 TAUSSIG, Mr Emil	52	1st Class Passenger	110413 £79 13s	Southampton			0	M
 TAUSSIG, Mrs Tillie	39	1st Class Passenger	110413 £79 13s	Southampton		8	1	F
 TAYLOR, Mr Bernard Cuthbert	22	Victualling Crew		Southampton	3rd Class Steward		0	M
-TAYLOR, Mr Charles William Frederick	35	Deck Crew		Southampton	Able-bodied Seaman		0	M
+TAYLOR, Mr Charles William Frederick	41	Deck Crew		Southampton	Able-bodied Seaman		0	M
 TAYLOR, Mr Elmer Zebley	48	1st Class Passenger	19996 £52	Southampton	Manufacturer	5	1	M
 TAYLOR, Mr George	24	Engineering Crew		Southampton	Fireman	1	1	M
 TAYLOR, Mr J.	42	Engineering Crew		Southampton	Fireman		0	M
