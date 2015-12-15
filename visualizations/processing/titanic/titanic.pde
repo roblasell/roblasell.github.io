@@ -607,7 +607,7 @@ void renderStats() {
 
 void renderStory() {
   stroke(titanicLineColor);
-  noFill();
+  fill(backgroundColor);
   strokeWeight(1.5);
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
   
