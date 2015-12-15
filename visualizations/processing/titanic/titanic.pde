@@ -613,13 +613,17 @@ void renderStats() {
 }
 
 void renderStory() {
+  String t1 = "Who died?";
+  String t2 = "Who survived?";
+  fill(backgroundColor);
+  rect(axisX1 - 2, storyY1 - 30, textWidth(t1) + 4, 30);
+  rect(axisX2 (textWidth(t2) + 2), storyY1 - 30, textWidth(t2) + 4, 30);
+  
   stroke(titanicLineColor);
   fill(backgroundColor);
   strokeWeight(1.5);
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
   
-  String t1 = "Who died?";
-  String t2 = "Who survived?";
   textSize(20);
   float h = storyY1 - 20;
   
