@@ -23,12 +23,12 @@ class StoryButton {
     if (isOver()) {
       fill(c);
       rect(x, y, w, h, 10);
-      fill(backgroundColor);
     } else {
       fill(c, 0.4 * 255);
       rect(x, y, w, h, 10);
-      fill(backgroundColor);
     }
+    
+    fill(255);
     
     text(label, x + 5, y + 5, w - 10, h - 10);
   }
