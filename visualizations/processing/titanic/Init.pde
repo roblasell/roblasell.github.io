@@ -283,7 +283,7 @@ void setupStoryButtons() {
   currentX += w + margin;
   stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 72, "of lower classes and crew died", victimHighlightColor);
   currentX += w + margin;
-  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", victimHighlightColor);
+  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 91, "of 3rd class passengers 40 and older died", victimHighlightColor);
   currentX += w + margin;
   stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 96, "of 1st class women survived", survivorHighlightColor);
   currentX += w + margin;
@@ -298,6 +298,10 @@ void setupStoryButtons() {
   stories[1].filters.add(filterMenu.filters.get(3));
   stories[1].filters.add(filterMenu.filters.get(4));
   stories[1].filters.add(filterMenu.filters.get(5));
+  
+  // 3rd class old people
+  stories[2].filters.add(filterMenu.filters.get(4));
+  stories[2].filters.add(filterMenu.filters.get(8));
   
   // 1st class women who survived
   stories[3].filters.add(filterMenu.filters.get(1));
