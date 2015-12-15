@@ -18,7 +18,7 @@ class FilterMenu {
     h = _h;
     
     buttonX = 0.865 * canvasWidth;
-    buttonY = h * 0.7;
+    buttonY = h * 0.69;
     buttonW = w * 0.45;
     buttonH = 20;
     

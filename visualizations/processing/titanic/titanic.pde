@@ -77,7 +77,7 @@ color victimHighlightColor = color(255, 119, 0);
 float arcAlpha = 0.8 * 255;
 
 color filterMenuColor = color(48, 69, 87);
-color filterTextColor = 200;
+color filterTextColor = 255;
 color backgroundColor = color(16, 36, 54);
 color toolTipColor = filterMenuColor;
 color toolTipTextColor = color(255);
@@ -120,7 +120,7 @@ void setup() {
   axisX2 = axisX1 + (filterMenu.x * widthPercent);
   axisY = canvasHeight * heightPercent;
   
-  console.log("axisX1: " + axisX1 + " axisX2: " + axisX2 + " axisY: " + axisY);
+  //console.log("axisX1: " + axisX1 + " axisX2: " + axisX2 + " axisY: " + axisY);
   
   calculateArcs();
   
@@ -377,7 +377,7 @@ void tooltip(JSTableRow row) {
   
   float boxW = 250;
   float textW = boxW - 14;
-  float boxH = ((textWidth(t) / textW) * 20) + 35;
+  float boxH = ((textWidth(t) / textW) * 20);//+ 35;
   float textH = boxH - 14;
   
   float boxX = mouseX - (boxW / 2);
@@ -559,7 +559,7 @@ void renderBlurb() {
   float hoverX = axisX1 + (pxPerDay * disasterNum);
   
   float w = 350;
-  float h = 80;
+  float h = 60;
   float x = hoverX + 80;
   float y = 70 - (h / 2);
   
