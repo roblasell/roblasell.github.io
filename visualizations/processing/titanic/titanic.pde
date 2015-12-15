@@ -286,7 +286,7 @@ void checkMouseHover() {
           drawArcs();
           drawAxis();
           drawImages();
-          renderStats();
+          //renderStats();
           renderStory();
         }
         highlightCounter++;
@@ -322,7 +322,7 @@ void checkMouseHover() {
     drawArcs();
     drawAxis();
     drawImages();
-    renderStats();
+    //renderStats();
     renderStory();
   }
 }
@@ -515,7 +515,7 @@ void filterTable() {
   drawArcs();
   drawAxis();
   drawImages();
-  renderStats();
+  //renderStats();
   renderStory();
 }
 
