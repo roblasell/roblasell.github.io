@@ -106,8 +106,8 @@ void setup() {
   disasterNum = computeDay("15th April 1912");
   
   inputData();
-  console.log("new version");
-  console.log(table.rows().size());
+  //console.log("new version");
+  //console.log(table.rows().size());
   
   makeFilters();
   
