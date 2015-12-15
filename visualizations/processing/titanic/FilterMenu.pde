@@ -67,7 +67,7 @@ class FilterMenu {
     // render filter message
     if (rowsFilteredIn != 0) {
       String t1 = (int)(survivorsFilteredIn / rowsFilteredIn) + "% of people in the selected categories survived";
-      String t1 = (int)(victimsFilteredIn / rowsFilteredIn) + "% of people in the selected categories died";
+      String t2 = (int)(victimsFilteredIn / rowsFilteredIn) + "% of people in the selected categories died";
       
       text(t1, buttonX, buttonY + 40, w - (2 * buttonX), 40);
       text(t2, buttonX, buttonY + 80, w - (2 * buttonX), 40);
