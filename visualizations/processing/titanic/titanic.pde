@@ -35,7 +35,7 @@ float minArcAngle = 5;
 float maxArcAngle = 150;
 
 float widthPercent = 0.9;
-float heightPercent = 0.5;
+float heightPercent = 0.3;
 float axisX1;
 float axisX2;
 float axisY;
@@ -100,7 +100,7 @@ int rowsFilteredIn = 1;
 int rowsFilteredOut = 0;
 
 float canvasWidth = 1200;
-float canvasHeight = 700;
+float canvasHeight = 1000;
 
 void setup() {
   setupTable();
@@ -148,7 +148,7 @@ void draw() {
 }
 
 void drawImages() {
-  image(sinkingImg, filterMenu.x + 3, canvasHeight - 132, 150, 150);
+  image(sinkingImg, filterMenu.x + 3, canvasHeight - 432, 150, 150);
   //image(icebergImg, (disasterNum * pxPerDay) + axisX1 - 25, height * 0.1, 50, 50);
 }
 
@@ -220,7 +220,6 @@ void drawArc(JSTableRow row, float angle, boolean victim) {
   float end;
   if (victim) {
     end = (3 * PI / 2) + (asin(lifeLength / (d / 2)));
-    //end = (3 * PI / 2) + (angle / 2);
   } else {
     end = (3 * PI / 2) + (angle / 2);
   }
