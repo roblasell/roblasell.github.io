@@ -47,6 +47,14 @@ section {
 	position: relative;
 }
 
+#victims {
+	color: #ff7700;
+}
+
+#survivors {
+	color: #85f1ff;
+}
+
 canvas {
 	margin-top: 10px auto;
 	/*border: 1px solid #ddd;*/
