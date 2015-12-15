@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+	color: #aaa;
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 5px;			
@@ -29,9 +30,10 @@ a {
 h4 {
 	color: #aaa;
 	font-size:12px;
-	font-weight: 20;
+	font-weight: lighter;
 	text-align: right;
 	opacity: 0.7;
+	margin-right: 100px;
 }
 
 section {
