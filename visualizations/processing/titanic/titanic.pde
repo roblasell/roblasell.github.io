@@ -612,7 +612,7 @@ void renderStats() {
     fill(toolTipTextColor);
     textSize(32);
     //text(percentIn + "%", x, y);
-    text(rowsFilteredIn + " out of " + totalVictims + " victims and " + totalSurvivors + " survivors");
+    text(rowsFilteredIn + " out of " + totalVictims + " victims and " + totalSurvivors + " survivors", x, y);
   }
 }
 

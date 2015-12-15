@@ -18,7 +18,7 @@ class StoryButton {
   
   void render() {
     strokeWeight(1.5);
-    stroke(c);
+    noStroke();
     
     if (isOver()) {
       fill(c);
@@ -29,8 +29,9 @@ class StoryButton {
     }
     
     fill(255);
-    
     text(label, x + 5, y + 5, w - 10, h - 10);
+    
+    stroke(0);
   }
   
   boolean isOver() {
