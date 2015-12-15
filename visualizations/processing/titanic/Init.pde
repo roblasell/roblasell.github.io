@@ -244,6 +244,8 @@ float menuPadding = 15;
 void makeFilters() {
   filterMenu = new FilterMenu(width * 0.85, 0 + menuPadding, width * 0.15 - menuPadding, height - (menuPadding * 2));
   
+  console.log("OH GOD THE WIDTH IS: " + width);
+  
   float currentHeight = 0.1 * height;
   float filterHeight = 15;
   float filterX = 0.865 * width;

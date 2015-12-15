@@ -100,7 +100,6 @@ int rowsFilteredIn = 1;
 int rowsFilteredOut = 0;
 
 void setup() {
-  console.log("VERSION 2");
   setupTable();
   setupMaps();
   
