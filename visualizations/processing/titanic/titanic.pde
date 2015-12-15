@@ -102,6 +102,9 @@ int rowsFilteredOut = 0;
 float canvasWidth = 1200;
 float canvasHeight = 800;
 
+StoryButton[] whoSurvived;
+StoryButton[] whoDied;
+
 void setup() {
   setupTable();
   setupMaps();
@@ -130,6 +133,8 @@ void setup() {
   //icebergImg = loadImage(icebergPic);
   
   renderingBlurb = false;
+  
+  setupStoryButtons();
   
   background(backgroundColor);
   drawArcs();
@@ -508,13 +513,9 @@ String convertName(String name) {
   return toReturn;
 }
 
-void drawDefaultDateLines() {
-  
-}
-
 void drawDateLines(JSTableRow row) {
   float xBirth = (row.getInt("birth_int") * pxPerDay) + axisX1;
-  float y = 230;
+  float y = 220;
   float textY;
   int survived = row.getInt("survived");
   float textAlpha = 0.8 * 255;

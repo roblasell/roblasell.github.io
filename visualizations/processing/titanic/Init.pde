@@ -262,3 +262,10 @@ void makeFilters() {
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Yes", "1", "survived");
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "No", "0", "survived");
 }
+
+void setupStoryButtons() {
+  whoSurvived = new StoryButton[3];
+  whoDied = new StoryButton[3];
+  
+  //whoSurvived[0] = new StoryButton();
+}
