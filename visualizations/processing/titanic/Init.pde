@@ -99,6 +99,14 @@ void inputData() {
     newRow.setString("converted_name", convertName(line[0]));
     newRow.setString("sex", line[8]);
     newRow.setInt("survived", parseInt(line[7]));
+    
+    if (parseInt(line[7]) == 1) {
+      totalSurvivors++;
+    } else {
+      totalVictims++;
+    }
+    total++;
+    
     newRow.setString("job", line[5]);
     newRow.setInt("filtered_out", 0);
     

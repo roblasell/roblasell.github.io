@@ -104,6 +104,10 @@ int rowsFilteredOut = 0;
 float canvasWidth = 1200;
 float canvasHeight = 800;
 
+int totalVictims = 0;
+int totalSurvivors = 0;
+int total;
+
 StoryButton[] stories;
 
 void setup() {
@@ -599,23 +603,23 @@ void renderBlurb() {
 
 void renderStats() {
   if (!(rowsFilteredIn == 0 || rowsFilteredOut == 0)) {
-    int total = rowsFilteredIn + rowsFilteredOut;
-    float percentIn = (float)rowsFilteredIn * 100 / (float)total;
-    float percentOut = (float)rowsFilteredOut * 100 / (float)total;
+    //float percentIn = (float)rowsFilteredIn * 100 / (float)total;
+    //float percentOut = (float)rowsFilteredOut * 100 / (float)total;
     
     float x = canvasWidth * 0.05;
     float y = axisY - 250;
     
     fill(toolTipTextColor);
     textSize(32);
-    text(percentIn + "%", x, y);
+    //text(percentIn + "%", x, y);
+    text(rowsFilteredIn + " out of " + totalVictims + " victims and " + totalSurvivors + " survivors");
   }
 }
 
 void renderStory() {
   textSize(20);
-  String t1 = "Who died?";
-  String t2 = "Who survived?";
+  String t1 = "Who were the victims?";
+  String t2 = "Who were the survivors?";
   fill(backgroundColor);
   noStroke();
   rect(axisX1 - 2, storyY1 - 50, textWidth(t1) + 4, 50);
