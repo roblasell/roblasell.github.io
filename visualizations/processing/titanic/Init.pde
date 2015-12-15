@@ -136,11 +136,8 @@ void inputData() {
     }
     
     if (death_date == null || line[7].equals("0")) {
-      if (line[0].equals("DEAN, Miss Elizabeth Gladys 'Millvina'")) {
-        println("HALP!" + deaths.get(line[0]));
-      }
-      int randomness = (int)(Math.random() * randomAgeRange) - (randomAgeRange / 2);
-      int year = parseInt(birth_date.substring(birth_date.length() - 4, birth_date.length())) + lifeExpectancies.get(age / 5) + randomness;
+      int randomness = (int)(Math.random() * randomAgeRange) - (int)(randomAgeRange / 2);
+      int year = parseInt(birth_date.substring(birth_date.length() - 4, birth_date.length())) + lifeExpectancies.get((int)(age / 5)) + randomness;
       
       death_date = birth_date.substring(0, birth_date.length() - 4) + year;
     }
@@ -162,15 +159,15 @@ void inputData() {
     int variation = 80;
     
     if (line[7].equals("0")) {
-      int r = ((int)(Math.random() * variation) - (variation / 2)) + victimRed;
-      int g = ((int)(Math.random() * variation) - (variation / 2)) + victimGreen;
-      int b = ((int)(Math.random() * variation) - (variation / 2)) + victimBlue;
+      int r = ((int)(Math.random() * variation) - (int)(variation / 2)) + victimRed;
+      int g = ((int)(Math.random() * variation) - (int)(variation / 2)) + victimGreen;
+      int b = ((int)(Math.random() * variation) - (int)(variation / 2)) + victimBlue;
       newRow.setInt("true_death_int", disasterNum);
       newRow.setInt("color", color(r, g, b));
     } else {
-      int r = ((int)(Math.random() * variation) - (variation / 2)) + survivorRed;
-      int g = ((int)(Math.random() * variation) - (variation / 2)) + survivorGreen;
-      int b = ((int)(Math.random() * variation) - (variation / 2)) + survivorBlue;
+      int r = ((int)(Math.random() * variation) - (int)(variation / 2)) + survivorRed;
+      int g = ((int)(Math.random() * variation) - (int)(variation / 2)) + survivorGreen;
+      int b = ((int)(Math.random() * variation) - (int)(variation / 2)) + survivorBlue;
       newRow.setInt("true_death_int", deathInt);
       newRow.setInt("color", color(r, g, b));
     }
