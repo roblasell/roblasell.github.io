@@ -121,6 +121,8 @@ void setup() {
   for (String s : fontList) {
    if(s.equals("CenturyGothic")){
     console.log("hoorah"); 
+   } else {
+    console.log("nay"); 
    }
   }
   gothic = createFont("CenturyGothic", 12);
