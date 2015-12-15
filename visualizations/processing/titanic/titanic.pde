@@ -114,8 +114,9 @@ int total;
 StoryButton[] stories;
 
 void setup() {
-  PFont raleway = loadFont(font);
-  textFont(raleway);
+  //PFont raleway = loadFont(font);
+  //textFont(raleway);
+  textFont("Century Gothic");
   
   setupTable();
   setupMaps();
