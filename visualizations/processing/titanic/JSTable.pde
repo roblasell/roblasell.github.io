@@ -49,6 +49,12 @@ class JSTable {
     // Copy the smallest values from either the left or the right side back
     // to the original array
     while (i <= middle && j <= high) {
+      if (temp.get(i) == null) {
+        console.log("OH NO!");
+      } else {
+        console.log("OH YES!");
+      }
+      
       if (temp.get(i).getInt(columnName) <= temp.get(j).getInt(columnName)) {
         rowList.set(k, temp.get(i));
         i++;
