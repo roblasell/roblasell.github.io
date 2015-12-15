@@ -116,7 +116,14 @@ StoryButton[] stories;
 void setup() {
   //PFont raleway = loadFont(font);
   //textFont(raleway);
-  PFont gothic = createFont("CenturyGothic", 12);
+  PFont gothic;
+  String[] fontList = PFont.list();
+  for (String s : fontList) {
+   if(s.equals("CenturyGothic")){
+    console.log("hoorah"); 
+   }
+  }
+  gothic = createFont("CenturyGothic", 12);
   textFont(gothic);
   
   setupTable();
