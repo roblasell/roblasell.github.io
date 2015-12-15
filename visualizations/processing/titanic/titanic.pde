@@ -101,6 +101,7 @@ int rowsFilteredOut = 0;
 
 void setup() {
   setupTable();
+  console.log(table.rows().size());
   setupMaps();
   
   disasterNum = computeDay("15th April 1912");
