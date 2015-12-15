@@ -51,10 +51,10 @@ class JSTable {
     while (i <= middle && j <= high) {
       if (temp.get(j) == null) {
         console.log(j);
-        console.log("jOH NO!");
+        console.log("jeOH NO!");
       } else {
         console.log(j);
-        console.log("jOH YES!");
+        console.log("jeOH YES!");
       }
       
       if (temp.get(i).getInt(columnName) <= temp.get(j).getInt(columnName)) {
