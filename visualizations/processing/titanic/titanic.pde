@@ -10,7 +10,7 @@ String deathFilename = "processing/titanic/data/death.txt";
 String dataFilename  = "processing/titanic/data/titanic-data.tsv";
 String sinkingPic = "processing/titanic/sinking.png";
 
-String blurb = "";//"Shortly before midnight on April 14, 1912, the RMS Titanic struck an iceberg roughly 400 miles off the coast of Newfoundland. Two and a half hours later, at 2:20 a.m., the ship sank with approximately 1500 people still on board.";
+String blurb = "Shortly before midnight on April 14, 1912, the RMS Titanic struck an iceberg roughly 400 miles off the coast of Newfoundland. Two and a half hours later, at 2:20 a.m., the ship sank with approximately 1500 people still on board.";
 
 /* Java Version 
 String birthFilename = "birth.txt";
@@ -219,7 +219,8 @@ void drawArc(JSTableRow row, float angle, boolean victim) {
   float start = (3 * PI / 2) - (angle / 2);
   float end;
   if (victim) {
-    end = (3 * PI / 2) + (asin(lifeLength / (d / 2)));
+    //end = (3 * PI / 2) + (asin(lifeLength / (d / 2)));
+    end = (3 * PI / 2) + (angle / 2);
   } else {
     end = (3 * PI / 2) + (angle / 2);
   }
