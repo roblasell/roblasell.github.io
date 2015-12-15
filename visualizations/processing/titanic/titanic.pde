@@ -81,7 +81,7 @@ color filterTextColor = 255;
 color backgroundColor = color(16, 36, 54);
 color toolTipColor = filterMenuColor;
 color toolTipTextColor = color(255);
-color titanicLineColor = color(173, 47, 9);
+color titanicLineColor = color(237, 68, 17);
 color axisColor = filterTextColor;
 color filterHighlightColor = color(100, 153, 196);
 
@@ -168,9 +168,9 @@ void drawAxis() {
   float top = 70;
   float x = axisX1 + (pxPerDay * disasterNum);
   line(x, canvasHeight + 10, axisX1 + (pxPerDay * disasterNum), top);
-  line(x - 53, top, x + 53, top);
+  line(x - 50, top, x + 50, top);
   textSize(14);
-  text("15th April 1912", x - 53, top - 7);
+  text("15th April 1912", x - 50, top - 7);
   strokeWeight(0);
 }
 
@@ -377,7 +377,7 @@ void tooltip(JSTableRow row) {
   
   float boxW = 250;
   float textW = boxW - 14;
-  float boxH = ((textWidth(t) / textW) * 20);//+ 35;
+  float boxH = ((textWidth(t) / textW) * 20) + 15;
   float textH = boxH - 14;
   
   float boxX = mouseX - (boxW / 2);
