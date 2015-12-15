@@ -35,7 +35,7 @@ float minArcAngle = 5;
 float maxArcAngle = 150;
 
 float widthPercent = 0.9;
-float heightPercent = 0.3;
+float heightPercent = 0.4;
 float axisX1;
 float axisX2;
 float axisY;
