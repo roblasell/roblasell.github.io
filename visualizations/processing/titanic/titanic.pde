@@ -454,7 +454,8 @@ void filterTable() {
       
       if (f.selected) {
         categoryChecked = true;
-        if ((currentCategory.equals("age") && checkAgeRange(row, f.value)) || (row.getString(f.category)).equals(f.value)) {
+        String rowCategory = row.getString(f.category);
+        if ((currentCategory.equals("age") && checkAgeRange(row, f.value)) || rowCategory.equals(f.value)) {
           standardsMet = true;
         }
       }
@@ -551,7 +552,6 @@ void drawDateLines(JSTableRow row) {
 }
 
 void renderBlurb() {
-  
   float hoverX = axisX1 + (pxPerDay * disasterNum);
   
   float w = 350;
