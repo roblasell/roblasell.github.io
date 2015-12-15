@@ -101,12 +101,14 @@ int rowsFilteredOut = 0;
 
 void setup() {
   setupTable();
-  console.log(table.rows().size());
   setupMaps();
   
   disasterNum = computeDay("15th April 1912");
   
   inputData();
+  console.log("new version");
+  console.log(table.rows().size());
+  
   makeFilters();
   
   table.sort("death_int");

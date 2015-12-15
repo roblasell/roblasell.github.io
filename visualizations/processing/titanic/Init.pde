@@ -2,6 +2,7 @@ int randomAgeRange = 15;
 
 void setupTable() {
   table = new JSTable();
+  console.log(
   table.addColumn("id");
   table.addColumn("age");
   table.addColumn("name");
