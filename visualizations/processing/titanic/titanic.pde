@@ -39,6 +39,8 @@ float heightPercent = 0.4;
 float axisX1;
 float axisX2;
 float axisY;
+float storyY1;
+float storyY2;
 
 float pxPerDay;
 float arcAngle = 5;
@@ -123,6 +125,9 @@ void setup() {
   axisX2 = axisX1 + (filterMenu.x * widthPercent);
   axisY = canvasHeight * heightPercent;
   
+  storyY1 = 0.8 * canvasHeight;
+  storyY2 = canvasHeight - axisX1;
+  
   //console.log("axisX1: " + axisX1 + " axisX2: " + axisX2 + " axisY: " + axisY);
   
   calculateArcs();
@@ -150,6 +155,7 @@ void draw() {
   
   checkMouseHover();
   strokeWeight(0);
+  renderStory();
 }
 
 void drawImages() {
@@ -594,4 +600,9 @@ void renderStats() {
     textSize(32);
     text(percentIn + "%", x, y);
   }
+}
+
+void renderStory() {
+  stroke(titanicLineColor);
+  rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
 }
