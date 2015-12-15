@@ -271,15 +271,17 @@ void setupStoryButtons() {
   float w = ((axisX2 - axisX1) - (7 * margin)) / 6;
   float currentX = axisX1 + margin;
   
-  stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
   currentX += w + margin;
-  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
   currentX += w + margin;
-  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
   currentX += w + margin;
-  stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
   currentX += w + margin;
-  stories[4] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[4] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
   currentX += w + margin;
-  stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
+
+  // SET FILTERS HERE
 }

@@ -441,6 +441,13 @@ void mouseClicked() {
     return;
   }
   
+  for (StoryButton sb : stories) {
+    if (sb.isOver()) {
+      sb.clicked();
+      return;
+    }
+  }
+  
   for (Filter f : filterMenu.filters) {
     if (f.isOver()) {
       f.selected = !f.selected;
