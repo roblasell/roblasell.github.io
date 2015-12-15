@@ -168,9 +168,9 @@ void drawAxis() {
   float top = 70;
   float x = axisX1 + (pxPerDay * disasterNum);
   line(x, canvasHeight + 10, axisX1 + (pxPerDay * disasterNum), top);
-  line(x - 50, top, x + 50, top);
+  line(x - 48, top, x + 48, top);
   textSize(14);
-  text("15th April 1912", x - 50, top - 7);
+  text("15th April 1912", x - 48, top - 7);
   strokeWeight(0);
 }
 
