@@ -31,7 +31,10 @@ class StoryButton {
     }
     
     fill(255);
-    text(label, x + 5, y + 5, w - 10, h - 10);
+    textSize(20);
+    text(percent + "%", x + 5, y + 5);
+    textSize(12);
+    text(label, x + 5, y + 35, w - 10, h - 10);
     
     stroke(0);
   }
