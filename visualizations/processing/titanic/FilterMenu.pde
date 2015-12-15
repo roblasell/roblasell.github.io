@@ -69,8 +69,8 @@ class FilterMenu {
       String t1 = (int)(100 * survivorsFilteredIn / rowsFilteredIn) + "% of people in the selected categories survived";
       String t2 = (int)(100 * victimsFilteredIn / rowsFilteredIn) + "% of people in the selected categories died";
       
-      text(t1, buttonX, buttonY + 40, w - (2 * (buttonX - x)), 40);
-      text(t2, buttonX, buttonY + 80, w - (2 * (buttonX - x)), 40);
+      text(t1, buttonX, buttonY + 40, w - (2 * (buttonX - x)), 60);
+      text(t2, buttonX, buttonY + 100, w - (2 * (buttonX - x)), 60);
     }
   }
   
