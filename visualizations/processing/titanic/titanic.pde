@@ -118,6 +118,8 @@ void setup() {
   axisX2 = axisX1 + (filterMenu.x * widthPercent);
   axisY = height * heightPercent;
   
+  console.log("axisX1: " + axisX1 + " axisX2: " + axisX2 + " axisY: " + axisY);
+  
   calculateArcs();
   
   size(1200, 700);
