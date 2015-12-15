@@ -9,6 +9,7 @@ String birthFilename = "processing/titanic/data/birth.txt";
 String deathFilename = "processing/titanic/data/death.txt";
 String dataFilename  = "processing/titanic/data/titanic-data.tsv";
 String sinkingPic = "processing/titanic/sinking.png";
+String font  = "processing/titanic/data/Raleway-Regular.ttf";
 
 String blurb = "Shortly before midnight on April 14, 1912, the RMS Titanic struck an iceberg roughly 400 miles off the coast of Newfoundland. Two and a half hours later, at 2:20 a.m., the ship sank with approximately 1500 people still on board.";
 
@@ -113,6 +114,9 @@ int total;
 StoryButton[] stories;
 
 void setup() {
+  PFont raleway = loadFont(font);
+  textFont(raleway);
+  
   setupTable();
   setupMaps();
   
