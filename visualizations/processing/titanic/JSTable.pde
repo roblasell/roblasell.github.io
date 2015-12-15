@@ -40,9 +40,6 @@ class JSTable {
       temp.set(i, rowList.get(i));
     }
 
-    console.log("Testing temp: ");
-    console.log(temp.size());
-
     int i = low;
     int j = middle + 1;
     int k = low;
