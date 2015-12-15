@@ -1,15 +1,17 @@
 class StoryButton {
   float x, y, w, h;
   String label;
+  float percent;
   ArrayList<Filter> filters;
   color c;
   
-  StoryButton(float _x, float _y, float _w, float _h, String _label, color _c) {
+  StoryButton(float _x, float _y, float _w, float _h, float _percent, String _label, color _c) {
     x = _x;
     y = _y;
     w = _w;
     h = _h;
     
+    percent = _percent;
     label = _label;
     c = _c;
     
@@ -24,7 +26,7 @@ class StoryButton {
       fill(c);
       rect(x, y, w, h, 10);
     } else {
-      fill(c, 0.4 * 255);
+      fill(c, 0.6 * 255);
       rect(x, y, w, h, 10);
     }
     

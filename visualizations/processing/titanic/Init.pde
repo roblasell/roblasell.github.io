@@ -279,7 +279,7 @@ void setupStoryButtons() {
   float w = ((axisX2 - axisX1) - (7 * margin)) / 6;
   float currentX = axisX1 + margin;
   
-  stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
+  stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 79, "of men died", victimHighlightColor);
   currentX += w + margin;
   stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
   currentX += w + margin;
@@ -291,5 +291,6 @@ void setupStoryButtons() {
   currentX += w + margin;
   stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
 
-  // SET FILTERS HERE
+  stories[0].filters.add(filterMenu.filters.get(0));
+  stories[0].filters.add(filterMenu.filters.get(8));
 }
