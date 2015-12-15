@@ -100,7 +100,7 @@ int rowsFilteredIn = 1;
 int rowsFilteredOut = 0;
 
 float canvasWidth = 1200;
-float canvasHeight = 1000;
+float canvasHeight = 800;
 
 void setup() {
   setupTable();
