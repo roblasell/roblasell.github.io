@@ -5,11 +5,11 @@ class Filter {
   float h;
   
   boolean selected;
-  String text;
+  String t;
   String value;
   String category;
   
-  Filter(float _x, float _y, float _w, float _h, String _text, String _value, String _category) {
+  Filter(float _x, float _y, float _w, float _h, String _t, String _value, String _category) {
     x = _x;
     y = _y;
     w = _w;
@@ -17,7 +17,7 @@ class Filter {
     
     value = _value;
     selected = false;
-    text = _text;
+    t = _t;
     category = _category;
   }
   
@@ -34,7 +34,7 @@ class Filter {
     strokeWeight(2);
     fill(filterTextColor);
     textSize(13);
-    text(text, x + w + 10, y + 12);
+    text(t, x + w + 10, y + 12);
     
     int checkSpace = 5;
     
