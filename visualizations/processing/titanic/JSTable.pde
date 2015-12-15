@@ -11,7 +11,7 @@ class JSTable {
     rowList = new ArrayList<JSTableRow>();
     columnNames = new ArrayList<String>();
   }
-  
+  /*
   public void sort(String columnName) {
     ArrayList<JSTableRow> temp = new ArrayList<JSTableRow>();
     for (int i = 0; i < rowList.size(); i++) {
@@ -19,7 +19,7 @@ class JSTable {
     }
     mergesort(0, rowList.size() - 1, temp, columnName);
   }
-
+*//*
   void mergesort(int low, int high, ArrayList<JSTableRow> temp, String columnName) {
     // check if low is smaller then high, if not then the array is sorted
     if (low < high) {
@@ -33,7 +33,7 @@ class JSTable {
       merge(low, middle, high, temp, columnName);
     }
   }
-  
+  *//*
   void merge(int low, int middle, int high, ArrayList<JSTableRow> temp, String columnName) {
     // Copy both parts into the helper array
     for (int i = low; i <= high; i++) {
@@ -64,7 +64,7 @@ class JSTable {
     }
 
   }
-  
+  */
   void addColumn(String columnName) {
     columnNames.add(columnName);
     for (JSTableRow row : rowList) {
