@@ -293,13 +293,10 @@ void setupStoryButtons() {
 
   // men who died
   stories[0].filters.add(filterMenu.filters.get(0));
-  stories[0].filters.add(filterMenu.filters.get(10));
   
   // children who died
   stories[1].filters.add(filterMenu.filters.get(6));
-  stories[1].filters.add(filterMenu.filters.get(10));
   
   // women who survived
   stories[3].filters.add(filterMenu.filters.get(1));
-  stories[3].filters.add(filterMenu.filters.get(9));
 }
