@@ -106,6 +106,7 @@ void setup() {
   disasterNum = computeDay("15th April 1912");
   
   inputData();
+  console.log(table.rows().size());
   makeFilters();
   
   table.sort("death_int");
