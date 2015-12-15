@@ -264,8 +264,22 @@ void makeFilters() {
 }
 
 void setupStoryButtons() {
-  whoSurvived = new StoryButton[3];
-  whoDied = new StoryButton[3];
+  stories = new StoryButton[6];
   
-  //whoSurvived[0] = new StoryButton();
+  float storyBoxHeight = storyY2 - storyY1;
+  float margin = 20;
+  float w = 100;
+  float currentX = axisX1 + margin;
+  
+  stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  currentX += w + margin;
+  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  currentX += w + margin;
+  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  currentX += w + margin;
+  stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  currentX += w + margin;
+  stories[4] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
+  currentX += w + margin;
+  stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));
 }

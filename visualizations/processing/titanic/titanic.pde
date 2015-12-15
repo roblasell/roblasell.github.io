@@ -104,8 +104,7 @@ int rowsFilteredOut = 0;
 float canvasWidth = 1200;
 float canvasHeight = 800;
 
-StoryButton[] whoSurvived;
-StoryButton[] whoDied;
+StoryButton[] stories;
 
 void setup() {
   setupTable();
@@ -178,7 +177,7 @@ void drawAxis() {
   fill(titanicLineColor);
   float top = 70;
   float x = axisX1 + (pxPerDay * disasterNum);
-  line(x, canvasHeight + 10, axisX1 + (pxPerDay * disasterNum), top);
+  line(x, storyY1, axisX1 + (pxPerDay * disasterNum), top);
   line(x - 48, top, x + 48, top);
   textSize(14);
   text("15th April 1912", x - 48, top - 7);
@@ -607,6 +606,11 @@ void renderStats() {
 
 void renderStory() {
   stroke(titanicLineColor);
+  noFill();
   strokeWeight(1.5);
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
+  
+  for (StoryButton sb : stories) {
+    sb.render();
+  }
 }
