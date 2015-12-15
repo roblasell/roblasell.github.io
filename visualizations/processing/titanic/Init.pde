@@ -281,15 +281,15 @@ void setupStoryButtons() {
   
   stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 79, "of men died", victimHighlightColor);
   currentX += w + margin;
-  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
+  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", victimHighlightColor);
   currentX += w + margin;
-  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", victimHighlightColor);
+  stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", victimHighlightColor);
   currentX += w + margin;
-  stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
+  stories[3] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 74, "of women survived", survivorHighlightColor);
   currentX += w + margin;
-  stories[4] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
+  stories[4] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", survivorHighlightColor);
   currentX += w + margin;
-  stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
+  stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", survivorHighlightColor);
 
   // men who died
   stories[0].filters.add(filterMenu.filters.get(0));
