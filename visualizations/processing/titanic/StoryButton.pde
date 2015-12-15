@@ -25,9 +25,9 @@ class StoryButton {
       rect(x, y, w, h, 10);
       fill(0);
     } else {
-      fill(backgroundColor);
-      rect(x, y, w, h, 10);
       fill(c);
+      rect(x, y, w, h, 10);
+      fill(backgroundColor);
     }
     
     text(label, x + 5, y + 5, w - 10, h - 10);

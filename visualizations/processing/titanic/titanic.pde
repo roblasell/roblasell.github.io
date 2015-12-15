@@ -622,8 +622,8 @@ void renderStory() {
   String t2 = "Who were the survivors?";
   fill(backgroundColor);
   noStroke();
-  rect(axisX1 - 2, storyY1 - 50, textWidth(t1) + 4, 50);
-  rect(axisX2 - (textWidth(t2) + 2), storyY1 - 50, textWidth(t2) + 4, 50);
+  rect(axisX1 - 2, storyY1 - 50, textWidth(t1) + 4, 49);
+  rect(axisX2 - (textWidth(t2) + 2), storyY1 - 50, textWidth(t2) + 4, 49);
   strokeWeight(1.5);
   
   stroke(titanicLineColor);
