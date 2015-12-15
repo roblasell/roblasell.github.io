@@ -10,7 +10,7 @@ String deathFilename = "processing/titanic/data/death.txt";
 String dataFilename  = "processing/titanic/data/titanic-data.tsv";
 String sinkingPic = "processing/titanic/sinking.png";
 
-String blurb = "Shortly before midnight on April 14, 1912, the RMS Titanic struck an iceberg roughly 400 miles off the coast of Newfoundland. Two and a half hours later, at 2:20 a.m., the ship sank with approximately 1500 people still on board.";
+String blurb = "";//"Shortly before midnight on April 14, 1912, the RMS Titanic struck an iceberg roughly 400 miles off the coast of Newfoundland. Two and a half hours later, at 2:20 a.m., the ship sank with approximately 1500 people still on board.";
 
 /* Java Version 
 String birthFilename = "birth.txt";
@@ -104,7 +104,7 @@ void setup() {
   setupMaps();
   
   disasterNum = computeDay("15th April 1912");
-  
+  console.log("HERE");
   inputData();
   //console.log("new version");
   //console.log(table.rows().size());
