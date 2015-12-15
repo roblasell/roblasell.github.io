@@ -268,7 +268,7 @@ void setupStoryButtons() {
   
   float storyBoxHeight = storyY2 - storyY1;
   float margin = 20;
-  float w = 100;
+  float w = ((axisX2 - axisX1) - (7 * margin)) / 6;
   float currentX = axisX1 + margin;
   
   stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", color(150));

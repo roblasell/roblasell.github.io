@@ -154,6 +154,7 @@ void draw() {
   renderBlurb();
   
   checkMouseHover();
+  renderStory();
   strokeWeight(0);
 }
 
