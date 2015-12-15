@@ -264,7 +264,7 @@ void makeFilters() {
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Crew", "0", "class");
   i++; // age
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "0 - 16", "0 - 16", "age");
-  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "19 - 39", "19 - 39", "age");
+  filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "17 - 39", "17 - 39", "age");
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "40+", "40+", "age");
   i++; // survived
   filterMenu.addFilter(filterX, currentHeight + (filterHeight * 2 * i++), filterHeight, filterHeight, "Yes", "1", "survived");
@@ -281,7 +281,7 @@ void setupStoryButtons() {
   
   stories[0] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 79, "of men died", victimHighlightColor);
   currentX += w + margin;
-  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 59, "of children died", victimHighlightColor);
+  stories[1] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 72, "of people not travelling in 1st class", victimHighlightColor);
   currentX += w + margin;
   stories[2] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), 0, "a label", victimHighlightColor);
   currentX += w + margin;
@@ -294,13 +294,14 @@ void setupStoryButtons() {
   // men who died
   stories[0].filters.add(filterMenu.filters.get(0));
   
-  // children who died
-  stories[1].filters.add(filterMenu.filters.get(6));
+  // lower classes and crew who died
+  stories[1].filters.add(filterMenu.filters.get(3));
+  stories[1].filters.add(filterMenu.filters.get(4));
+  stories[1].filters.add(filterMenu.filters.get(5));
   
   // 1st class women who survived
   stories[3].filters.add(filterMenu.filters.get(1));
   stories[3].filters.add(filterMenu.filters.get(2));
-  
-  // women who survived
-  //stories[3].filters.add(filterMenu.filters.get(1));
+
+
 }
