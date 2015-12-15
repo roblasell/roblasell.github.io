@@ -114,16 +114,6 @@ int total;
 StoryButton[] stories;
 
 void setup() {
-  //PFont raleway = loadFont(font);
-  //textFont(raleway);
-  PFont gothic;
-  String[] fontList = PFont.list();
-  for (String s : fontList) {
-   console.log(s);
-   
-  }
-  gothic = createFont("CenturyGothic", 12);
-  textFont(gothic);
   
   setupTable();
   setupMaps();
