@@ -148,7 +148,7 @@ void draw() {
 }
 
 void drawImages() {
-  image(sinkingImg, filterMenu.x + 3, canvasHeight - 432, 150, 150);
+  image(sinkingImg, filterMenu.x + 3, canvasHeight - 132, 150, 150);
   //image(icebergImg, (disasterNum * pxPerDay) + axisX1 - 25, height * 0.1, 50, 50);
 }
 
