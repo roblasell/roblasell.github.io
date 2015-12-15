@@ -618,6 +618,17 @@ void renderStory() {
   strokeWeight(1.5);
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
   
+  String t1 = "Who died?";
+  String t2 = "Who survived?";
+  textSize(20);
+  float h = storyY1 - 20;
+  
+  fill(victimHighlightColor);
+  text(t1, axisX1, h);
+  
+  fill(survivorHighlightColor);
+  text(t2, axisX2 - textWidth(t2), h);
+  
   for (StoryButton sb : stories) {
     sb.render();
   }
