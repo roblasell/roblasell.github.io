@@ -18,7 +18,7 @@ class FilterMenu {
     h = _h;
     
     buttonX = 0.865 * canvasWidth;
-    buttonY = h * 0.6;
+    buttonY = h * 0.7;
     buttonW = w * 0.45;
     buttonH = 20;
     
@@ -35,7 +35,7 @@ class FilterMenu {
     text("Filter by:", x + (0.1 * w), 40);
     strokeWeight(1.5);
     stroke(filterTextColor);
-    line(x + 0.1 * w, 0.05 * h, x + 0.9 * w, 0.05 * h);
+    line(x + 0.1 * w, 0.06 * h, x + 0.9 * w, 0.06 * h);
     
     stroke(0);
     String category = "";
