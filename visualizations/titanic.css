@@ -28,7 +28,7 @@ section {
 
 canvas {
 	margin-top: 10px auto;
-	border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
 	border-radius: 5px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
