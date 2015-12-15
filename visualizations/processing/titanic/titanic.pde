@@ -146,6 +146,7 @@ void setup() {
   drawAxis();
   filterMenu.render();
   drawImages();
+  renderStory();
 }
 
 void draw() {
@@ -155,7 +156,6 @@ void draw() {
   
   checkMouseHover();
   strokeWeight(0);
-  renderStory();
 }
 
 void drawImages() {
@@ -281,6 +281,7 @@ void checkMouseHover() {
           drawAxis();
           drawImages();
           renderStats();
+          renderStory();
         }
         highlightCounter++;
         
@@ -316,6 +317,7 @@ void checkMouseHover() {
     drawAxis();
     drawImages();
     renderStats();
+    renderStory();
   }
 }
 
@@ -494,6 +496,7 @@ void filterTable() {
   drawAxis();
   drawImages();
   renderStats();
+  renderStory();
 }
 
 boolean checkAgeRange(JSTableRow row, String value) {
@@ -604,5 +607,6 @@ void renderStats() {
 
 void renderStory() {
   stroke(titanicLineColor);
+  strokeWeight(1.5);
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
 }
