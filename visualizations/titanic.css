@@ -21,11 +21,17 @@ h2 {
 	font-weight: 100;			
 }
 
+a {
+	text-decoration: none;
+	color: #aaa;
+}
+
 h4 {
 	color: #aaa;
 	font-size:12px;
-	font-weight: 50;
+	font-weight: 20;
 	text-align: right;
+	opacity: 0.7;
 }
 
 section {
