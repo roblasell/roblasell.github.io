@@ -219,8 +219,8 @@ void drawArc(JSTableRow row, float angle, boolean victim) {
   float start = (3 * PI / 2) - (angle / 2);
   float end;
   if (victim) {
-    //end = (3 * PI / 2) + (asin(lifeLength / (d / 2)));
-    end = (3 * PI / 2) + (angle / 2);
+    end = (3 * PI / 2) + (asin(lifeLength / (d / 2)));
+    //end = (3 * PI / 2) + (angle / 2);
   } else {
     end = (3 * PI / 2) + (angle / 2);
   }
