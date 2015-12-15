@@ -21,9 +21,9 @@ class StoryButton {
     stroke(c);
     
     if (isOver()) {
-      fill(255);
+      fill(c);
       rect(x, y, w, h, 10);
-      fill(0);
+      fill(backgroundColor);
     } else {
       fill(c, 0.4 * 255);
       rect(x, y, w, h, 10);
