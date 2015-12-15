@@ -307,75 +307,75 @@ void checkMouseHover() {
 }
 
 void tooltip(JSTableRow row) {
-  String text = "";
-  text += row.getString("converted_name");
+  String t = "";
+  t += row.getString("converted_name");
   
   // profession
   String job = row.getString("job");
   if (!job.equals("")) {
-    text += ", a " + job + ",";
+    t += ", a " + job + ",";
   }
   
-  text += " was " + row.getString("age") + " when ";
+  t += " was " + row.getString("age") + " when ";
   
   // sex
   if (row.getString("sex").equals("M")) {
-    text += "he ";
+    t += "he ";
   } else {
-    text += "she ";
+    t += "she ";
   }
   
   // survived
   if (row.getInt("survived") == 1) {
-    text += "survived ";
+    t += "survived ";
   } else {
-    text += "died during ";
+    t += "died during ";
   }
   
-  text += "the Titanic disaster. ";
+  t += "the Titanic disaster. ";
   
   if (row.getString("sex").equals("M")) {
-    text += "He ";
+    t += "He ";
   } else {
-    text += "She ";
+    t += "She ";
   }
   
   int classNum = row.getInt("class");
   if (classNum == 0) {
-    text += "was a member of the crew.";
+    t += "was a member of the crew.";
   } else {
-    text += "was travelling ";
+    t += "was travelling ";
     
     ArrayList companions = getCompanions(row);
     if (companions.isEmpty()) {
-      text += "alone ";
+      t += "alone ";
     } else {
-      text += "with ";
+      t += "with ";
       int len = companions.size();
       for (int i = 0; i < companions.size(); i++) {
-        text += companions.get(i);
+        t += companions.get(i);
         if (i == len - 2) {
-          text += " and ";
+          t += " and ";
         } else if (i == len - 1) {
-          text += " ";
+          t += " ";
         } else {
-          text += ", ";
+          t += ", ";
         }
       }
     }
     
     if (classNum == 1) {
-      text += "in 1st class.";
+      t += "in 1st class.";
     } else if (classNum == 2) {
-      text += "in 2nd class.";
+      t += "in 2nd class.";
     } else if (classNum == 3) {
-      text += "in 3rd class.";
+      t += "in 3rd class.";
     }
   }
   
   float boxW = 250;
   float textW = boxW - 14;
-  float boxH = ((textWidth(text) / textW) * 20) + 35;
+  float boxH = ((textWidth(t) / textW) * 20) + 35;
   float textH = boxH - 14;
   
   float boxX = mouseX - (boxW / 2);
@@ -396,7 +396,7 @@ void tooltip(JSTableRow row) {
   
   textSize(12);
   fill(toolTipTextColor);
-  text(text, boxX + 7, boxY + 7, textW, textH);
+  text(t, boxX + 7, boxY + 7, textW, textH);
 }
 
 ArrayList<String> getCompanions(JSTableRow row) {
