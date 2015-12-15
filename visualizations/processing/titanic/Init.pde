@@ -242,13 +242,13 @@ void calculateArc(JSTableRow row, float angle) {
 float menuPadding = 15;
 
 void makeFilters() {
-  filterMenu = new FilterMenu(width * 0.85, 0 + menuPadding, width * 0.15 - menuPadding, height - (menuPadding * 2));
+  filterMenu = new FilterMenu(canvasWidth * 0.85, 0 + menuPadding, canvasWidth * 0.15 - menuPadding, canvasHeight - (menuPadding * 2));
   
-  console.log("OH GOD THE WIDTH IS: " + width);
+  console.log("OH GOD THE WIDTH IS: " + canvasWidth);
   
-  float currentHeight = 0.1 * height;
+  float currentHeight = 0.1 * canvasHeight;
   float filterHeight = 15;
-  float filterX = 0.865 * width;
+  float filterX = 0.865 * canvasWidth;
   int i = 0;
   
   i++; // sex

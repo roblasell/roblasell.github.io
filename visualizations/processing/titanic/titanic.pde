@@ -99,6 +99,9 @@ boolean renderingBlurb;
 int rowsFilteredIn = 1;
 int rowsFilteredOut = 0;
 
+float canvasWidth = 1200;
+float canvasHeight = 700;
+
 void setup() {
   setupTable();
   setupMaps();
@@ -115,13 +118,13 @@ void setup() {
   
   axisX1 = filterMenu.x * ((1 - widthPercent) / 2);
   axisX2 = axisX1 + (filterMenu.x * widthPercent);
-  axisY = height * heightPercent;
+  axisY = canvasHeight * heightPercent;
   
   console.log("axisX1: " + axisX1 + " axisX2: " + axisX2 + " axisY: " + axisY);
   
   calculateArcs();
   
-  size(1200, 700);
+  size(canvasWidth, canvasHeight);
   
   sinkingImg = loadImage(sinkingPic);
   //icebergImg = loadImage(icebergPic);
@@ -145,7 +148,7 @@ void draw() {
 }
 
 void drawImages() {
-  image(sinkingImg, filterMenu.x + 3, height - 132, 150, 150);
+  image(sinkingImg, filterMenu.x + 3, canvasHeight - 132, 150, 150);
   //image(icebergImg, (disasterNum * pxPerDay) + axisX1 - 25, height * 0.1, 50, 50);
 }
 
@@ -164,7 +167,7 @@ void drawAxis() {
   fill(titanicLineColor);
   float top = 70;
   float x = axisX1 + (pxPerDay * disasterNum);
-  line(x, height + 10, axisX1 + (pxPerDay * disasterNum), top);
+  line(x, canvasHeight + 10, axisX1 + (pxPerDay * disasterNum), top);
   line(x - 53, top, x + 53, top);
   textSize(14);
   text("15th April 1912", x - 53, top - 7);
@@ -386,8 +389,8 @@ void tooltip(JSTableRow row) {
   
   if (boxX < 0) {
     boxX = 0;
-  } else if (boxX > (0.85 * width) - boxW) {
-    boxX = (0.85 * width) - boxW;
+  } else if (boxX > (0.85 * canvasWidth) - boxW) {
+    boxX = (0.85 * canvasWidth) - boxW;
   }
   
   fill(toolTipColor, 0.8 * 255);
@@ -583,7 +586,7 @@ void renderStats() {
     float percentIn = (float)rowsFilteredIn * 100 / (float)total;
     float percentOut = (float)rowsFilteredOut * 100 / (float)total;
     
-    float x = width * 0.05;
+    float x = canvasWidth * 0.05;
     float y = axisY - 250;
     
     fill(toolTipTextColor);
