@@ -119,11 +119,8 @@ void setup() {
   PFont gothic;
   String[] fontList = PFont.list();
   for (String s : fontList) {
-   if(s.equals("CenturyGothic")){
-    console.log("hoorah"); 
-   } else {
-    console.log("nay"); 
-   }
+   console.log(s);
+   
   }
   gothic = createFont("CenturyGothic", 12);
   textFont(gothic);
