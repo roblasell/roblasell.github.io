@@ -7,7 +7,63 @@ class JSTable {
   ArrayList<JSTableRow> rowList;
   ArrayList<String> columnNames;
   
+  JSTable() {
+    rowList = new ArrayList<JSTableRow>();
+    columnNames = new ArrayList<String>();
+  }
+
+  public void sort(String columnName) {
+    ArrayList<JSTableRow> temp = new ArrayList<JSTableRow>();
+    for (int i = 0; i < rowList.size(); i++) {
+      temp.add(null);
+    }
+    mergesort(0, rowList.size() - 1, temp, columnName);
+  }
   
+  void mergesort(int low, int high, ArrayList<JSTableRow> temp, String columnName) {
+    // check if low is smaller then high, if not then the array is sorted
+    if (low < high) {
+      // Get the index of the element which is in the middle
+      int middle = low + (high - low) / 2;
+      // Sort the left side of the array
+      mergesort(low, middle, temp, columnName);
+      // Sort the right side of the array
+      mergesort(middle + 1, high, temp, columnName);
+      // Combine them both
+      merge(low, middle, high, temp, columnName);
+    }
+  }
+
+  void merge(int low, int middle, int high, ArrayList<JSTableRow> temp, String columnName) {
+    // Copy both parts into the helper array
+    for (int i = low; i <= high; i++) {
+      temp.set(i, rowList.get(i));
+    }
+
+    int i = low;
+    int j = middle + 1;
+    int k = low;
+    // Copy the smallest values from either the left or the right side back
+    // to the original array
+    while (i <= middle && j <= high) {
+      if (temp.get(i).getInt(columnName) <= temp.get(j).getInt(columnName)) {
+        rowList.set(k, temp.get(i));
+        i++;
+      } else {
+        rowList.set(k, temp.get(j));
+        j++;
+      }
+      k++;
+    }
+    
+    // Copy the rest of the left side of the array into the target array
+    while (i <= middle) {
+      rowList.set(k, temp.get(i));
+      k++;
+      i++;
+    }
+
+  }
   
   void addColumn(String columnName) {
     columnNames.add(columnName);
