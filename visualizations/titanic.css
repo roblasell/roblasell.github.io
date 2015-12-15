@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	background-color: #102436;
+}
+
+body {
+	width:100%;
+	padding: 25px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 5px;			
+}		
+
+h2 {
+	color: #aaa;
+	font-size: 14px;
+	font-weight: 100;			
+}
+
+section {
+	margin: 10px 0;
+	position: relative;
+}
+
+canvas {
+	margin-top: 10px auto;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+canvas:focus {
+	outline:none;
+}
