@@ -291,6 +291,11 @@ void setupStoryButtons() {
   currentX += w + margin;
   stories[5] = new StoryButton(currentX, storyY1 + margin, w, storyBoxHeight - (margin * 2), "a label", survivorHighlightColor);
 
+  // men who died
   stories[0].filters.add(filterMenu.filters.get(0));
-  stories[0].filters.add(filterMenu.filters.get(8));
+  stories[0].filters.add(filterMenu.filters.get(10));
+  
+  // women who survived
+  stories[3].filters.add(filterMenu.filters.get(1));
+  stories[3].filters.add(filterMenu.filters.get(9));
 }
