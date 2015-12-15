@@ -304,8 +304,8 @@ void setupStoryButtons() {
   stories[3].filters.add(filterMenu.filters.get(2));
   
   // 3rd class women who survived
-  stories[3].filters.add(filterMenu.filters.get(1));
-  stories[3].filters.add(filterMenu.filters.get(4));
+  stories[4].filters.add(filterMenu.filters.get(1));
+  stories[4].filters.add(filterMenu.filters.get(4));
 
   // kids who survived
   stories[5].filters.add(filterMenu.filters.get(6));

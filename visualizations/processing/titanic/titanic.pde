@@ -640,7 +640,7 @@ void renderStory() {
   rect(axisX1, storyY1, axisX2 - axisX1, storyY2 - storyY1);
   
   textSize(20);
-  float h = storyY1 - 20;
+  float h = storyY1 - 10;
   
   fill(victimHighlightColor);
   text(t1, axisX1, h);
