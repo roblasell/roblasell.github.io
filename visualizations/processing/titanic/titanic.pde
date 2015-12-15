@@ -514,7 +514,7 @@ void drawDefaultDateLines() {
 
 void drawDateLines(JSTableRow row) {
   float xBirth = (row.getInt("birth_int") * pxPerDay) + axisX1;
-  float y = 250;
+  float y = 230;
   float textY;
   int survived = row.getInt("survived");
   float textAlpha = 0.8 * 255;
@@ -551,7 +551,7 @@ void drawDateLines(JSTableRow row) {
     text(birthText, xBirth - (textWidth(birthText) / 2) + 2, textY);
     textSize(14);
     float xDeath = axisX1 + (pxPerDay * disasterNum);
-    text("died", xDeath - 87, 63);
+    text("died", xDeath - 80, 63);
   }
 }
 
