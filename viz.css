@@ -1,0 +1,26 @@
+ul.vizs {
+	list-style-type: none;
+	padding: 5px;
+}
+
+ul.vizs a {
+	color: #303030;
+	font-size: 20px;
+	text-decoration: none;
+	/*-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;*/
+    padding: 1px;
+    display: block;
+}
+
+ul.vizs a:hover {
+	color: #f0f0f0;
+}
+
+ul.vizs li:hover {
+	color: #f0f0f0;
+	background: #303030;
+
+}
